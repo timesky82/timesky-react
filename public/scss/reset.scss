@@ -1,0 +1,260 @@
+
+body {
+    font-family: "Pretendard";
+}
+
+html body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+ol,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+input,
+audio,
+video {
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    word-break: keep-all;
+    outline: none;
+    background: none;
+    list-style: none;
+}
+
+/*reset */
+
+ol{
+    margin-left: 20px;
+}
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family:
+        "Pretendard",
+        "spoqa_light",
+        Malgun Gothic,
+        "Droid Sans",
+        arial,
+        sans-serif;
+    min-width: 320px;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote {
+    quotes: none;
+
+    &:before,
+    &:after {
+        content: none;
+    }
+}
+
+a,
+button {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+a {
+    &:focus,
+    &:visited,
+    &:focus {
+        text-decoration: none;
+        color: inherit;
+        outline: none;
+    }
+
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+    width: 100%;
+}
+
+q {
+    quotes: none;
+
+    &:before,
+    &:after {
+        content: none;
+    }
+}
+
+ol{
+    margin-left: 20px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+#accessibility {
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: left;
+
+    a {
+        display: block;
+        z-index: 500;
+        position: absolute;
+        width: 100%;
+        top: -1000px;
+        left: 0;
+        text-align: center;
+
+        &:focus,
+        &:active {
+            z-index: 1000;
+            position: absolute;
+            height: 40px;
+            top: 0;
+            font:
+                bold 12px "Malgun Gothic",
+                Dotum,
+                Gulim,
+                "Apple SD Gothic Neo",
+                sans-serif;
+            line-height: 40px;
+            color: #fff;
+            background: #000;
+        }
+    }
+}
+
+.a11y {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    top: (-900px);
+    margin: -1px;
+}
+
+.ir {
+    display: block;
+    position: absolute;
+    position: relative;
+    overflow: hidden;
+    text-indent: -9999px;
+
+    &:after {
+        display: block;
+        content: "";
+    }
+}
+
+.after:after,
+.before:before {
+    display: block;
+    content: "";
+}
+
+.ir:after {
+    position: absolute;
+}

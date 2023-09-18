@@ -1,0 +1,109 @@
+@charset 'UTF-8';
+@import "ionicicons.scss";
+@import "helper.scss";
+@import "reset.scss";
+@import "typo.scss";
+@import "button.scss";
+@import "input.scss";
+:root {
+    --color-white: #fff;
+    --color-primary: #2e9dd1;
+    --color-secondary: #26a69a;
+    --color-accent: #9c27b0;
+    --color-positive: #339f63;
+    --color-negative: #ed1c24;
+    --color-info: #31ccec;
+    --color-warning: #fda306;
+    --color-dark: #1d1d1d;
+    --color-dark-page: #121212;
+    --color-gray-01: #eee;
+    --color-gray-02: #ddd;
+    --color-gray-03: #666;
+}
+.bg_white {
+    background-color: var(--color-white) !important;
+}
+.bg_primary {
+    background-color: var(--color-primary) !important;
+}
+.bg_secondary {
+    background-color: var(--color-secondary) !important;
+}
+.bg_accent {
+    background-color: var(--color-accent) !important;
+}
+.bg_positive {
+    background-color: var(--color-positive) !important;
+}
+.bg_negative {
+    background-color: var(--color-negative) !important;
+}
+.bg_info {
+    background-color: var(--color-info) !important;
+}
+.bg_warning {
+    background-color: var(--color-warning) !important;
+}
+.bg_dark {
+    background-color: var(--color-dark) !important;
+}
+.bg_dark-page {
+    background-color: var(--color-dark-page) !important;
+}
+.bg_gray-01 {
+    background-color: var(--color-gray-01) !important;
+}
+.bg_gray-02 {
+    background-color: var(--color-gray-02) !important;
+}
+.bg_gray-03 {
+    background-color: var(--color-gray-03) !important;
+}
+
+.text_white {
+    color: var(--color-white) !important;
+}
+.text_primary {
+    color: var(--color-primary) !important;
+}
+.text_secondary {
+    color: var(--color-secondary) !important;
+}
+.text_accent {
+    color: var(--color-accent) !important;
+}
+.text_positive {
+    color: var(--color-positive) !important;
+}
+.text_negative {
+    color: var(--color-negative) !important;
+}
+.text_info {
+    color: var(--color-info) !important;
+}
+.text_warning {
+    color: var(--color-warning) !important;
+}
+.text_dark {
+    color: var(--color-dark) !important;
+}
+.text_dark-page {
+    color: var(--color-dark-page) !important;
+}
+.text_gray-01 {
+    color: var(--color-gray-01) !important;
+}
+.text_gray-02 {
+    color: var(--color-gray-02) !important;
+}
+.text_gray-03 {
+    color: var(--color-gray-03) !important;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+

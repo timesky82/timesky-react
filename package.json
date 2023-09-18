@@ -10,15 +10,21 @@
         "deploy": "next build && touch out/.nojekyll && git add -f out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix out origin gh-pages"
     },
     "dependencies": {
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
+        "@mui/material": "^5.14.9",
         "@types/node": "20.6.2",
         "@types/react": "18.2.21",
         "@types/react-dom": "18.2.7",
         "eslint": "8.49.0",
         "eslint-config-next": "13.4.19",
+        "immer": "^10.0.2",
         "next": "13.4.19",
         "react": "18.2.0",
         "react-dom": "18.2.0",
-        "typescript": "5.2.2"
+        "sass": "^1.67.0",
+        "typescript": "5.2.2",
+        "use-immer": "^0.9.0"
     },
     "devDependencies": {
         "gh-pages": "^6.0.0"

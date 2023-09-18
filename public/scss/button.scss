@@ -1,0 +1,54 @@
+.MuiButton-contained,
+.MuiButton-outlined {
+    &.text_white {
+        border-color: var(--color-white) !important;
+    }
+    &.text_primary {
+        border-color: var(--color-primary) !important;
+    }
+    &.text_secondary {
+        border-color: var(--color-secondary) !important;
+    }
+    &.text_accent {
+        border-color: var(--color-accent) !important;
+    }
+    &.text_positive {
+        border-color: var(--color-positive) !important;
+    }
+    &.text_negative {
+        border-color: var(--color-negative) !important;
+    }
+    &.text_info {
+        border-color: var(--color-info) !important;
+    }
+    &.text_warning {
+        border-color: var(--color-warning) !important;
+    }
+    &.text_dark {
+        border-color: var(--color-dark) !important;
+    }
+    &.text_dark-page {
+        border-color: var(--color-dark-page) !important;
+    }
+    &.text_gray-01 {
+        border-color: var(--color-gray-01) !important;
+    }
+    &.text_gray-02 {
+        border-color: var(--color-gray-02) !important;
+    }
+    &.text_gray-03 {
+        border-color: var(--color-gray-03) !important;
+    }
+}
+button.MuiButton-outlined,
+button.MuiButton-contained {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px 6px 10px;
+    .ion {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+}
