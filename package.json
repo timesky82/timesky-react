@@ -4,7 +4,7 @@
     "homepage": "https://timesky82.github.io/timesky-react/",
     "scripts": {
         "dev": "next dev",
-        "build": "next build",
+        "build": "next build out",
         "start": "next start",
         "lint": "next lint"
     },
