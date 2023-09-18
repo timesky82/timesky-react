@@ -1,10 +1,10 @@
 {
     "name": "timesky-react",
     "version": "0.1.0",
-    "homepage": "https://timesky82.github.io/timesky-react/",
+  
     "scripts": {
         "dev": "next dev",
-        "build": "next build out",
+        "build": "next build",
         "start": "next start",
         "lint": "next lint"
     },
