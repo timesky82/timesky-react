@@ -142,7 +142,7 @@ export default function ResponsiveDrawer(
                         component={Link}
                         href={subMenu.depth2}
                       >
-                        <ListItemText primary={subMenu.depth2} />
+                        <p>{subMenu.depth2} </p>
                       </ListItemButton>
                     </List>
                   );
