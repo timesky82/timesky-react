@@ -7,9 +7,6 @@ const nextConfig = {
     trailingSlash: true,
     output: 'export',
 };
-// export const prefix =
-//     process.env.NODE_ENV === "production"
-//         ? "https://timesky82.github.io/timesky-react"
-//         : "";
+   : "";
 
 module.exports = nextConfig
