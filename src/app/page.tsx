@@ -13,7 +13,8 @@ import FormGroup from "@mui/material/FormGroup";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import Fade from "@mui/material/Fade";
-
+import "@/../../public/scss/global.scss";
+import "@/../../public/scss/main.scss";
 export default function MenuAppBar() {
   //  아바타
   const [auth, setAuth] = React.useState(true);
