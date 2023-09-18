@@ -4,11 +4,11 @@ import { Breakpoint, Theme, useTheme, createTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import ThemeRegistry from "@/ThemeRegistry/ThemeRegistry";
 import "@/../../public/scss/global.scss";
-export const metadata = {
-  title: "메인페이지 React",
-  description: "",
-  // viewport: "width=380, initial-scale=1",
-};
+// export const metadata = {
+//   title: "메인페이지 React",
+//   description: "",
+//   // viewport: "width=380, initial-scale=1",
+// };
 type BreakpointOrNull = Breakpoint | null;
 function useWidth() {
   const theme: Theme = useTheme();

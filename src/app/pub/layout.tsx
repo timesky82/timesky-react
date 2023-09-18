@@ -19,13 +19,13 @@ import Typography from "@mui/material/Typography";
 import Collapse from "@mui/material/Collapse";
 import "@/../../public/scss/global.scss";
 import "@/../../public/scss/main.scss";
-import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Pub Guide",
-  openGraph: {
-    title: "Pub Guide",
-  },
-};
+
+// export const metadata: Metadata = {
+//   title: "Pub Guide",
+//   openGraph: {
+//     title: "Pub Guide",
+//   },
+// };
 // theme;
 const theme = createTheme();
 interface Props {
