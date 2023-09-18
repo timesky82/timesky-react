@@ -1,0 +1,28 @@
+.wrap_input_basic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    label {
+        margin-right: 20px;
+        min-width: 140px;
+        color: var(--color-gray-03);
+        font-weight: 700;
+    }
+    .MuiTextField-root,
+    .MuiOutlinedInput-root {
+        width: 100%;
+    }
+}
+
+.outlabel_input {
+    legend {
+        display: none !important;
+    }
+    .MuiSelect-select {
+        max-width: calc(100vw - 286px);
+        min-width: 50px !important;
+        overflow: hidden !important;
+    }
+}
+
