@@ -7,6 +7,7 @@ body {
 }
 .main_content {
     max-width: 1400px;
+    width: 100%;
 }
 .acc_list_basic {
     .MuiAccordion-root {
@@ -85,5 +86,14 @@ body {
         justify-content: flex-start;
         align-items: center;
         padding: 10px 20px;
+    }
+}
+// sampletab
+.wrap_tab {
+    .tab_content {
+        width: 100%;
+        min-height: 300px;
+        padding: 10px;
+        border: 1px solid #efefef;
     }
 }

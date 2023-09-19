@@ -7,6 +7,9 @@ const nextConfig = {
     // assetPrefix: !debug ? `/${repository}/` : "",
     trailingSlash: true,
     output: 'export',
+    images: {
+        unoptimized: true
+    }
 };
 
 

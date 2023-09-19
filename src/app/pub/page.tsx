@@ -10,6 +10,7 @@ import SelectGuideComponent from "./selectComponent";
 import RadioGuideComponent from "./radioGuideComponent";
 import ToggleSwitchGuideComponent from "./toggleSwitchGuideComponent";
 import ModalGuideComponent from "./modalGuideComponent";
+import TabsGuideComponent from "./tabsGuideComponent";
 //
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -28,7 +29,8 @@ export default function GuidePage() {
     { id: 5, open: false },
     { id: 6, open: false },
     { id: 7, open: false },
-    { id: 8, open: true },
+    { id: 8, open: false },
+    { id: 9, open: true },
   ]);
   const accToggle = (index: any) => {
     return (event: any) => {
@@ -40,6 +42,7 @@ export default function GuidePage() {
   };
   return (
     <React.StrictMode>
+      
       <div className="acc_list_basic">
         <Accordion
           disableGutters={true}
@@ -201,6 +204,24 @@ export default function GuidePage() {
           </AccordionSummary>
           <AccordionDetails>
             <ModalGuideComponent />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          disableGutters={true}
+          expanded={dataAcc[9].open}
+          onChange={accToggle(dataAcc[9].id)}
+          elevation={0}
+        >
+          <AccordionSummary aria-controls="panel1bh-content">
+            <h3 className="tit">Tabs</h3>
+            {dataAcc[9].open ? (
+              <i className="ion ion-ios-arrow-up"></i>
+            ) : (
+              <i className="ion ion-ios-arrow-down"></i>
+            )}
+          </AccordionSummary>
+          <AccordionDetails>
+            <TabsGuideComponent />
           </AccordionDetails>
         </Accordion>
       </div>

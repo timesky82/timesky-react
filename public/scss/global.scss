@@ -99,16 +99,17 @@
 .text_gray-03 {
     color: var(--color-gray-03) !important;
 }
-.row{
+.row {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
 }
-body{
+body {
     overflow-y: scroll;
 }
 
-.justify-center{
-    justify-content: center!important;
+.justify-center {
+    justify-content: center !important;
 }
+
