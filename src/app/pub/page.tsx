@@ -14,7 +14,6 @@ import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import { useImmer } from "use-immer";
-import "@/../../public/scss/global.scss";
 import "@/../../public/scss/pub_guide.scss";
 export default function GuidePage() {
   const [expanded, setExpanded] = React.useState<string | false>(false);

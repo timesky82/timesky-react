@@ -3505,49 +3505,4 @@
 }
 
 
-@font-face {
-    font-family: "Ionicons";
-    src: url("/fonts/woff2/ionicons.woff2");
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: "Pretendard";
-    font-weight: 900;
-    font-display: swap;
-    src:
-        local("Pretendard Black"),
-        url("/fonts/woff2/Pretendard-Black.woff2") format("woff2"),
-        url("/fonts/woff/Pretendard-Black.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Pretendard";
-    font-weight: 800;
-    font-display: swap;
-    src:
-        local("Pretendard ExtraBold"),
-        url("/fonts/woff2/Pretendard-ExtraBold.woff2") format("woff2"),
-        url("/fonts/woff/Pretendard-ExtraBold.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Pretendard";
-    font-weight: 700;
-    font-display: swap;
-    src:
-        local("Pretendard Bold"),
-        url("/fonts/woff2/Pretendard-Bold.woff2") format("woff2"),
-        url("/fonts/woff/Pretendard-Bold.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Pretendard";
-    font-weight: 600;
-    font-display: swap;
-    src:
-        local("Pretendard SemiBold"),
-        url("/fonts/woff2/Pretendard-SemiBold.woff2") format("woff2"),
-        url("/fonts/woff/Pretendard-SemiBold.woff") format("woff");
-}
