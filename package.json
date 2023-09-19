@@ -5,14 +5,8 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
-<<<<<<< HEAD
-        "start": "npx serve@latest out",
-        "lint": "next lint",
-        "deploy": "next build"
-=======
         "start": "next start",
         "lint": "next lint"
->>>>>>> dcab2ed76fb5a84b4f466e26ead6e97c60d85ab0
     },
     "dependencies": {
         "@emotion/react": "^11.11.1",
