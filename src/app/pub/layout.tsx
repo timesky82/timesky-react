@@ -101,7 +101,6 @@ export default function ResponsiveDrawer(
   //  drawerSubBtnToggle
   const drawerSubBtnToggle = (index: any) => {
     return (event: any) => {
-      event.persist();
       updateDataGnb((draft) => {
         draft[index].open = !draft[index].open;
       });
@@ -119,7 +118,7 @@ export default function ResponsiveDrawer(
         {dataGnb.map((dataGnb, i) => (
           <div key={dataGnb.id}>
             {dataGnb.href ? '' : (
-              <ListItemButton  onClick={drawerSubBtnToggle(i)}>
+              <ListItemButton   onClick={drawerSubBtnToggle(i)}>
                 <ListItemText primary={dataGnb.depth1} disableTypography />
 
                 {dataGnb.subMenu ? (
