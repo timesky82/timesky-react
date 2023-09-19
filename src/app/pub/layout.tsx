@@ -19,13 +19,13 @@ import Typography from "@mui/material/Typography";
 import Collapse from "@mui/material/Collapse";
 import "@/../../public/scss/global.scss";
 import "@/../../public/scss/main.scss";
-import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Pub Guide",
-  openGraph: {
-    title: "Pub Guide",
-  },
-};
+// import type { Metadata } from "next";
+// export const metadata: Metadata = {
+//   title: "Pub Guide",
+//   openGraph: {
+//     title: "Pub Guide",
+//   },
+// };
 // theme;
 const theme = createTheme();
 interface Props {
@@ -64,7 +64,7 @@ export default function ResponsiveDrawer(
       depth1: "depth1-1",
       icon: "",
       open: false,
-      href: "#",
+      href: null,
       subMenu: [
         { id: "1_1", depth2: "depth1-1", icon: "", href: "pub/" },
         { id: "1_2", depth2: "depth1-2", icon: "" },
@@ -118,24 +118,21 @@ export default function ResponsiveDrawer(
       >
         {dataGnb.map((dataGnb, i) => (
           <div key={dataGnb.id}>
-            <ListItemButton 
-              href={dataGnb.href ? dataGnb.href : ""}
-              onClick={drawerSubBtnToggle(i)}
-            >
+            {dataGnb.href ? '' : (
+              <ListItemButton  onClick={drawerSubBtnToggle(i)}>
+                <ListItemText primary={dataGnb.depth1} disableTypography />
 
+                {dataGnb.subMenu ? (
+                  dataGnb.open ? (
+                    <i className="ion ion-ios-arrow-up"></i>
+                  ) : (
+                    <i className="ion ion-ios-arrow-down"></i>
+                  )
+                ) : null}
+              </ListItemButton>
+            )}
 
-
-              
-              <ListItemText primary={dataGnb.depth1} disableTypography />
-
-              {dataGnb.subMenu ? (
-                dataGnb.open ? (
-                  <i className="ion ion-ios-arrow-up"></i>
-                ) : (
-                  <i className="ion ion-ios-arrow-down"></i>
-                )
-              ) : null}
-            </ListItemButton>
+            
             <Collapse in={dataGnb.open} timeout="auto" unmountOnExit>
               {dataGnb.subMenu &&
                 dataGnb.subMenu.map((subMenu, index) => {
@@ -146,7 +143,10 @@ export default function ResponsiveDrawer(
                         component={Link}
                         href={subMenu.depth2}
                       >
-                        <ListItemText primary={subMenu.depth2} disableTypography/>
+                        <ListItemText
+                          primary={subMenu.depth2}
+                          disableTypography
+                        />
                       </ListItemButton>
                     </List>
                   );
@@ -173,7 +173,7 @@ export default function ResponsiveDrawer(
                 aria-label="open drawer"
                 edge="end"
                 onClick={handleDrawerToggle}
-                sx={{ mr: 0, display: { md: "none" },width:'24px' }}
+                sx={{ mr: 0, display: { md: "none" }, width: "24px" }}
               >
                 {mobileOpen ? (
                   <i className="ion ion-ios-close"></i>
