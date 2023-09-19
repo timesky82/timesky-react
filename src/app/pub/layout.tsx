@@ -119,7 +119,11 @@ export default function ResponsiveDrawer(
             {dataGnb.href ? (
               ""
             ) : (
-              <button className="btn_list" onClick={drawerSubBtnToggle(i)}>
+              <Button
+                variant="text"
+                className="btn_list"
+                onClick={drawerSubBtnToggle(i)}
+              >
                 <p className="btn_txt">{dataGnb.depth1} </p>
                 {dataGnb.subMenu ? (
                   dataGnb.open ? (
@@ -128,20 +132,21 @@ export default function ResponsiveDrawer(
                     <i className="ion ion-ios-arrow-down"></i>
                   )
                 ) : null}
-              </button>
+              </Button>
             )}
 
             <Collapse in={dataGnb.open} timeout="auto">
               {dataGnb.subMenu &&
                 dataGnb.subMenu.map((subMenu, index) => {
                   return (
-                    <Link
+                    <Button
+                      variant="text"
                       className="btn_sub_depth"
                       href={subMenu.href}
                       key={subMenu.id}
                     >
                       {subMenu.depth2}
-                    </Link>
+                    </Button>
                   );
                 })}
             </Collapse>
