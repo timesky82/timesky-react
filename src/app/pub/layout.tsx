@@ -132,11 +132,11 @@ export default function ResponsiveDrawer(
               </button>
             )}
 
-            <Collapse in={dataGnb.open} timeout="auto">
-              {dataGnb.subMenu &&
-                dataGnb.subMenu.map((subMenu, index) => {
-                  return (
-                    <List disablePadding key={subMenu.id}>
+            {dataGnb.subMenu &&
+              dataGnb.subMenu.map((subMenu, index) => {
+                return (
+                  <Collapse in={dataGnb.open} timeout="auto" key={subMenu.id}>
+                    <List disablePadding>
                       <ListItemButton
                         sx={{ pl: 4 }}
                         component={Link}
@@ -145,9 +145,9 @@ export default function ResponsiveDrawer(
                         {subMenu.depth2}
                       </ListItemButton>
                     </List>
-                  );
-                })}
-            </Collapse>
+                  </Collapse>
+                );
+              })}
           </div>
         ))}
       </List>
