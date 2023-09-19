@@ -65,8 +65,8 @@ export default function ResponsiveDrawer(
       open: false,
       href: null,
       subMenu: [
-        { id: "1_1", depth2: "depth1-1", icon: "", href: "pub/" },
-        { id: "1_2", depth2: "depth1-2", icon: "", href: "pub/" },
+        { id: "1_1", depth2: "depth1-1", icon: "", href: "#" },
+        { id: "1_2", depth2: "depth1-2", icon: "", href: "#" },
       ],
     },
     {
@@ -76,8 +76,8 @@ export default function ResponsiveDrawer(
       open: false,
       href: null,
       subMenu: [
-        { id: "2_1", depth2: "depth2-1", icon: "", href: "pub/" },
-        { id: "2_2", depth2: "depth2-2", icon: "", href: "pub/" },
+        { id: "2_1", depth2: "depth2-1", icon: "", href: "#" },
+        { id: "2_2", depth2: "depth2-2", icon: "", href: "#" },
       ],
     },
     {
@@ -86,8 +86,8 @@ export default function ResponsiveDrawer(
       icon: "",
 
       subMenu: [
-        { id: "2_1", depth2: "depth3-1", icon: "", href: "pub/" },
-        { id: "2_2", depth2: "depth3-2", icon: "", href: "pub/" },
+        { id: "2_1", depth2: "depth3-1", icon: "", href: "#" },
+        { id: "2_2", depth2: "depth3-2", icon: "", href: "#" },
       ],
     },
   ]);
@@ -137,8 +137,8 @@ export default function ResponsiveDrawer(
                   return (
                     <Link
                       className="btn_sub_depth"
-                      href={subMenu.depth2}
-                      key={"/" + subMenu.id}
+                      href={subMenu.href}
+                      key={subMenu.id}
                     >
                       {subMenu.depth2}
                     </Link>
