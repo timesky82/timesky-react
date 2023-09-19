@@ -12,8 +12,7 @@ import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
+import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Collapse from "@mui/material/Collapse";
@@ -132,22 +131,20 @@ export default function ResponsiveDrawer(
               </button>
             )}
 
-            {dataGnb.subMenu &&
-              dataGnb.subMenu.map((subMenu, index) => {
-                return (
-                  <Collapse in={dataGnb.open} timeout="auto" key={subMenu.id}>
-                    <List disablePadding>
-                      <ListItemButton
-                        sx={{ pl: 4 }}
-                        component={Link}
-                        href={subMenu.depth2}
-                      >
-                        {subMenu.depth2}
-                      </ListItemButton>
-                    </List>
-                  </Collapse>
-                );
-              })}
+            <Collapse in={dataGnb.open} timeout="auto">
+              {dataGnb.subMenu &&
+                dataGnb.subMenu.map((subMenu, index) => {
+                  return (
+                    <Link
+                      className="btn_sub_depth"
+                      href={subMenu.depth2}
+                      key={"/" + subMenu.id}
+                    >
+                      {subMenu.depth2}
+                    </Link>
+                  );
+                })}
+            </Collapse>
           </div>
         ))}
       </List>

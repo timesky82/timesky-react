@@ -79,4 +79,11 @@ body {
         color: var(--color-gray-dark);
         font-weight: 500;
     }
+    .btn_sub_depth {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 20px;
+    }
 }
