@@ -19,13 +19,13 @@ import Typography from "@mui/material/Typography";
 import Collapse from "@mui/material/Collapse";
 import "@/../../public/scss/global.scss";
 import "@/../../public/scss/main.scss";
-
-// export const metadata: Metadata = {
-//   title: "Pub Guide",
-//   openGraph: {
-//     title: "Pub Guide",
-//   },
-// };
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Pub Guide",
+  openGraph: {
+    title: "Pub Guide",
+  },
+};
 // theme;
 const theme = createTheme();
 interface Props {
@@ -118,11 +118,15 @@ export default function ResponsiveDrawer(
       >
         {dataGnb.map((dataGnb, i) => (
           <div key={dataGnb.id}>
-            <ListItemButton
+            <ListItemButton 
               href={dataGnb.href ? dataGnb.href : ""}
               onClick={drawerSubBtnToggle(i)}
             >
-              <ListItemText primary={dataGnb.depth1} />
+
+
+
+              
+              <ListItemText primary={dataGnb.depth1} disableTypography />
 
               {dataGnb.subMenu ? (
                 dataGnb.open ? (
@@ -142,7 +146,7 @@ export default function ResponsiveDrawer(
                         component={Link}
                         href={subMenu.depth2}
                       >
-                        <p>{subMenu.depth2} </p>
+                        <ListItemText primary={subMenu.depth2} disableTypography/>
                       </ListItemButton>
                     </List>
                   );
