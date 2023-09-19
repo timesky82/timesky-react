@@ -67,7 +67,7 @@ export default function ResponsiveDrawer(
       href: null,
       subMenu: [
         { id: "1_1", depth2: "depth1-1", icon: "", href: "pub/" },
-        { id: "1_2", depth2: "depth1-2", icon: "" },
+        { id: "1_2", depth2: "depth1-2", icon: "", href: "pub/" },
       ],
     },
     {
@@ -77,8 +77,8 @@ export default function ResponsiveDrawer(
       open: false,
       href: null,
       subMenu: [
-        { id: "2_1", depth2: "depth2-1", icon: "" },
-        { id: "2_2", depth2: "depth2-2", icon: "" },
+        { id: "2_1", depth2: "depth2-1", icon: "", href: "pub/" },
+        { id: "2_2", depth2: "depth2-2", icon: "", href: "pub/" },
       ],
     },
     {
@@ -87,8 +87,8 @@ export default function ResponsiveDrawer(
       icon: "",
 
       subMenu: [
-        { id: "2_1", depth2: "depth3-1", icon: "" },
-        { id: "2_2", depth2: "depth3-2", icon: "" },
+        { id: "2_1", depth2: "depth3-1", icon: "", href: "pub/" },
+        { id: "2_2", depth2: "depth3-2", icon: "", href: "pub/" },
       ],
     },
   ]);
@@ -132,20 +132,17 @@ export default function ResponsiveDrawer(
               </button>
             )}
 
-            <Collapse in={dataGnb.open} timeout="auto" unmountOnExit>
+            <Collapse in={dataGnb.open} timeout="auto">
               {dataGnb.subMenu &&
                 dataGnb.subMenu.map((subMenu, index) => {
                   return (
-                    <List component="a" disablePadding key={subMenu.id}>
+                    <List disablePadding key={subMenu.id}>
                       <ListItemButton
                         sx={{ pl: 4 }}
                         component={Link}
                         href={subMenu.depth2}
                       >
-                        <ListItemText
-                          primary={subMenu.depth2}
-                          disableTypography
-                        />
+                        {subMenu.depth2}
                       </ListItemButton>
                     </List>
                   );
