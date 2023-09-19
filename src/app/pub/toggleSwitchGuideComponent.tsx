@@ -39,7 +39,7 @@ export default function ToggleButtonSizes() {
 
   return (
     <>
-      <h3 className="mb10 text_h3">text 버튼</h3>
+      <h3 className="mb10 text_h3">토글 버튼</h3>
       <Box sx={{ width: "100%" }} className="mb20">
         <ToggleButtonGroup size="small" {...control} aria-label="Small sizes">
           {children}

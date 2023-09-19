@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-// 
+//
 import ColorGuideComponent from "./colorComponent";
 import TypoGuideComponent from "./typoComponent";
 import IconGuideComponent from "./ioniconComponent";
@@ -9,7 +9,8 @@ import InputGuideComponent from "./inputComponent";
 import SelectGuideComponent from "./selectComponent";
 import RadioGuideComponent from "./radioGuideComponent";
 import ToggleSwitchGuideComponent from "./toggleSwitchGuideComponent";
-// 
+import ModalGuideComponent from "./modalGuideComponent";
+//
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -26,8 +27,8 @@ export default function GuidePage() {
     { id: 4, open: false },
     { id: 5, open: false },
     { id: 6, open: false },
-    { id: 7, open: true },
-    { id: 8, open: false },
+    { id: 7, open: false },
+    { id: 8, open: true },
   ]);
   const accToggle = (index: any) => {
     return (event: any) => {
@@ -182,6 +183,24 @@ export default function GuidePage() {
           </AccordionSummary>
           <AccordionDetails>
             <ToggleSwitchGuideComponent />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          disableGutters={true}
+          expanded={dataAcc[8].open}
+          onChange={accToggle(dataAcc[8].id)}
+          elevation={0}
+        >
+          <AccordionSummary aria-controls="panel1bh-content">
+            <h3 className="tit">모달(dialog)</h3>
+            {dataAcc[8].open ? (
+              <i className="ion ion-ios-arrow-up"></i>
+            ) : (
+              <i className="ion ion-ios-arrow-down"></i>
+            )}
+          </AccordionSummary>
+          <AccordionDetails>
+            <ModalGuideComponent />
           </AccordionDetails>
         </Accordion>
       </div>

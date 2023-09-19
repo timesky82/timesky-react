@@ -45,10 +45,12 @@ button.MuiButton-contained {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     padding: 6px 10px 6px 10px;
     .ion {
         font-size: 24px;
         margin-right: 10px;
     }
+}
+button.width_icon{
+    justify-content: space-between;
 }

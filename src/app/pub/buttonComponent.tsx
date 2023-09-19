@@ -120,19 +120,19 @@ export default function buttonComponent() {
       <h3 className="mb10 text_h3">Icon 버튼</h3>
       <Box sx={{ "& button": { m: 1 } }} className="mb20">
         <div className="row">
-          <Button variant="contained" className="bg_negative">
+          <Button variant="contained" className="bg_negative width_icon">
             <i className="ion ion-ios-arrow-down"></i>
             <span>ICON</span>
           </Button>
           <Button
             disableElevation
             variant="outlined"
-            className="bg_white text_warning"
+            className="bg_white text_warning width_icon"
           >
             <i className="ion ion-ios-save"></i>
             <span>ICON</span>
           </Button>
-          <Button disableElevation variant="contained" className="">
+          <Button disableElevation variant="contained" className="width_icon">
             <i className="ion ion-ios-cloud-circle"></i>
             <span>ICON</span>
           </Button>
