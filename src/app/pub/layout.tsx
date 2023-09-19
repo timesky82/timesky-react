@@ -116,11 +116,12 @@ export default function ResponsiveDrawer(
         aria-labelledby="nested-list-subheader"
       >
         {dataGnb.map((dataGnb, i) => (
-          <div key={dataGnb.id}>
-            {dataGnb.href ? '' : (
-              <ListItemButton   onClick={drawerSubBtnToggle(i)}>
-                <ListItemText primary={dataGnb.depth1} disableTypography />
-
+          <div className="drawer_list" key={dataGnb.id}>
+            {dataGnb.href ? (
+              ""
+            ) : (
+              <button className="btn_list" onClick={drawerSubBtnToggle(i)}>
+                <p className="btn_txt">{dataGnb.depth1} </p>
                 {dataGnb.subMenu ? (
                   dataGnb.open ? (
                     <i className="ion ion-ios-arrow-up"></i>
@@ -128,15 +129,14 @@ export default function ResponsiveDrawer(
                     <i className="ion ion-ios-arrow-down"></i>
                   )
                 ) : null}
-              </ListItemButton>
+              </button>
             )}
 
-            
             <Collapse in={dataGnb.open} timeout="auto" unmountOnExit>
               {dataGnb.subMenu &&
                 dataGnb.subMenu.map((subMenu, index) => {
                   return (
-                    <List component="div" disablePadding key={subMenu.id}>
+                    <List component="a" disablePadding key={subMenu.id}>
                       <ListItemButton
                         sx={{ pl: 4 }}
                         component={Link}
