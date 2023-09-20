@@ -1,4 +1,9 @@
-# Material UI - Next.js App Router example in TypeScript
+# 베이직 인터네셔널  React 퍼블리싱 가이드
+
+
+- Material UI - Next.js App Router example in TypeScript
+- NextJs
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with Material UI installed.
 
@@ -66,13 +71,14 @@ https://www.npmjs.com/package/use-immer
 
 - '/public/img'
   import "@/../../public/img/xxx.png"
+
 - lazy load
   https://github.com/Aljullu/react-lazy-load-image-component
   MIT License Copyright (c) 2018 Albert Juhé Lluveras
 
 4. Color
 
-  <h2>api </h2>
+  <!-- <h2>api </h2>
       <ol>
         <li>datapicker</li>
         <li>tree-view</li>
@@ -116,14 +122,14 @@ https://www.npmjs.com/package/use-immer
         </li>
 
         <li>탭</li>
-        <li>레이지로드</li>
-          <!-- 여기 -->
+        <li>레이지로드</li> -->
+
         <li>툴팁</li>
         <li>뱃지</li>
         <li>스낵바(토스트)</li>
         <li>아코디언</li>
 
-
+        <!-- 0921 -->
         <li>
           테이블
           <ul>
@@ -131,6 +137,7 @@ https://www.npmjs.com/package/use-immer
             <li>pagination</li>
           </ul>
         </li>
+         <!-- 0922 -->
         <li>
           갤러리
           <ul>

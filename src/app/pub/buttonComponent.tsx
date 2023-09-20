@@ -132,7 +132,7 @@ export default function buttonComponent() {
             <i className="ion ion-ios-save"></i>
             <span>ICON</span>
           </Button>
-          <Button disableElevation variant="contained" className="width_icon">
+          <Button disableElevation variant="contained" className="width_icon text_white">
             <i className="ion ion-ios-cloud-circle"></i>
             <span>ICON</span>
           </Button>
