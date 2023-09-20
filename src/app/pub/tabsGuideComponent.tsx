@@ -58,7 +58,7 @@ export default function BasicTabs() {
         <Tab label="Item seven" {...a11yProps(6)} />
       </Tabs>
       <CustomTabPanel value={value} index={0}>
-        <h3 className="tit">It is Sample Tab</h3>
+        <h3 className="tit">It is Lazy Load Sample</h3>
         <div className="wrap_content_item">
           <div className="img_area">
             <LazyLoadImage
@@ -72,18 +72,16 @@ export default function BasicTabs() {
           </div>
           <div className="txt_area">
             <p className="txt">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-              molestiae vitae molestias eaque distinctio dolorem aliquam
-              repellendus provident, illo facere corrupti quibusdam minus
-              quaerat sunt mollitia deserunt. Maxime, omnis obcaecati excepturi
-              vel rerum quaerat quas molestiae totam placeat ratione. Nulla
-              optio vel beatae non numquam blanditiis ducimus, magnam aut
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, similique aliquid numquam voluptatem est aperiam
+              deserunt illo distinctio aliquam dolorum iste. Saepe eius veniam
+              quibusdam nemo placeat molestiae inventore officiis.
             </p>
           </div>
         </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <h3 className="tit">It is Sample Tab</h3>
+        <h3 className="tit">It is Lazy Load Sample</h3>
         <div className="wrap_content_item">
           <div className="img_area">
             <LazyLoadImage
@@ -108,7 +106,7 @@ export default function BasicTabs() {
         </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        <h3 className="tit">It is Sample Tab</h3>
+        <h3 className="tit">It is Lazy Load Sample</h3>
         <div className="wrap_content_item">
           <div className="img_area">
             <LazyLoadImage
@@ -122,18 +120,16 @@ export default function BasicTabs() {
           </div>
           <div className="txt_area">
             <p className="txt">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-              molestiae vitae molestias eaque distinctio dolorem aliquam
-              repellendus provident, illo facere corrupti quibusdam minus
-              quaerat sunt mollitia deserunt. Maxime, omnis obcaecati excepturi
-              vel rerum quaerat quas molestiae totam placeat ratione. Nulla
-              optio vel beatae non numquam blanditiis ducimus, magnam aut
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              placeat, minus nihil, in excepturi ratione consequatur modi
+              nostrum doloribus velit eius error explicabo quisquam sapiente
+              deleniti, distinctio odit at aliquid?
             </p>
           </div>
         </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
-        <h3 className="tit">It is Sample Tab</h3>
+        <h3 className="tit">It is Lazy Load Sample</h3>
         <div className="wrap_content_item">
           <div className="img_area">
             <LazyLoadImage
@@ -147,18 +143,15 @@ export default function BasicTabs() {
           </div>
           <div className="txt_area">
             <p className="txt">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-              molestiae vitae molestias eaque distinctio dolorem aliquam
-              repellendus provident, illo facere corrupti quibusdam minus
-              quaerat sunt mollitia deserunt. Maxime, omnis obcaecati excepturi
-              vel rerum quaerat quas molestiae totam placeat ratione. Nulla
-              optio vel beatae non numquam blanditiis ducimus, magnam aut
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
+              quos placeat tempora suscipit fugiat porro necessitatibus vel
+              atque quo vitae! Ut aut animi architecto?
             </p>
           </div>
         </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={4}>
-        <h3 className="tit">It is Sample Tab</h3>
+        <h3 className="tit">It is Lazy Load Sample</h3>
         <div className="wrap_content_item">
           <div className="img_area">
             <LazyLoadImage
@@ -183,7 +176,7 @@ export default function BasicTabs() {
         </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={5}>
-        <h3 className="tit">It is Sample Tab</h3>
+        <h3 className="tit">It is Lazy Load Sample</h3>
         <div className="wrap_content_item">
           <div className="img_area">
             <LazyLoadImage
@@ -196,19 +189,12 @@ export default function BasicTabs() {
             />
           </div>
           <div className="txt_area">
-            <p className="txt">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-              molestiae vitae molestias eaque distinctio dolorem aliquam
-              repellendus provident, illo facere corrupti quibusdam minus
-              quaerat sunt mollitia deserunt. Maxime, omnis obcaecati excepturi
-              vel rerum quaerat quas molestiae totam placeat ratione. Nulla
-              optio vel beatae non numquam blanditiis ducimus, magnam aut
-            </p>
+            <p className="txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aut repellendus nisi laborum at sapiente et soluta quae, quam pariatur unde error?</p>
           </div>
         </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={6}>
-        <h3 className="tit">It is Sample Tab</h3>
+        <h3 className="tit">It is Lazy Load Sample</h3>
         <div className="wrap_content_item">
           <div className="img_area">
             <LazyLoadImage
@@ -221,14 +207,7 @@ export default function BasicTabs() {
             />
           </div>
           <div className="txt_area">
-            <p className="txt">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-              molestiae vitae molestias eaque distinctio dolorem aliquam
-              repellendus provident, illo facere corrupti quibusdam minus
-              quaerat sunt mollitia deserunt. Maxime, omnis obcaecati excepturi
-              vel rerum quaerat quas molestiae totam placeat ratione. Nulla
-              optio vel beatae non numquam blanditiis ducimus, magnam aut
-            </p>
+            <p className="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia distinctio minus hic eum officiis sapiente consectetur non, dignissimos quos reiciendis! Praesentium, ex! Sequi facilis dolores repellat reprehenderit animi iusto nisi est, odio necessitatibus labore laudantium excepturi beatae cum ipsam distinctio et veritatis eum quibusdam. Esse ipsum hic debitis consectetur quibusdam!</p>
           </div>
         </div>
       </CustomTabPanel>
