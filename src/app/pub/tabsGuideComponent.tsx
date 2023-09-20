@@ -2,8 +2,7 @@
 import * as React from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
-import Image from "next/image";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
@@ -59,68 +58,179 @@ export default function BasicTabs() {
         <Tab label="Item seven" {...a11yProps(6)} />
       </Tabs>
       <CustomTabPanel value={value} index={0}>
-        <Image
-        
-          src="https://picsum.photos/500/300?random=1"
-          width={500}
-          height={300}
-          style={{ objectFit: "contain" }}
-          alt="lorempic"
-        />
+        <h3 className="tit">It is Sample Tab</h3>
+        <div className="wrap_content_item">
+          <div className="img_area">
+            <LazyLoadImage
+              src={"https://picsum.photos/400/380?random=1"}
+              height={"280px"}
+              width={"380px"}
+              alt="lorempic"
+              effect="blur"
+              placeholderSrc={"/favicon.ico"}
+            />
+          </div>
+          <div className="txt_area">
+            <p className="txt">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+              molestiae vitae molestias eaque distinctio dolorem aliquam
+              repellendus provident, illo facere corrupti quibusdam minus
+              quaerat sunt mollitia deserunt. Maxime, omnis obcaecati excepturi
+              vel rerum quaerat quas molestiae totam placeat ratione. Nulla
+              optio vel beatae non numquam blanditiis ducimus, magnam aut
+            </p>
+          </div>
+        </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <Image
-          src="https://picsum.photos/500/300?random=2"
-          width={500}
-          height={300}
-          style={{ objectFit: "contain" }}
-          alt="lorempic"
-        />
+        <h3 className="tit">It is Sample Tab</h3>
+        <div className="wrap_content_item">
+          <div className="img_area">
+            <LazyLoadImage
+              src={"https://picsum.photos/400/380?random=1"}
+              height={"280px"}
+              width={"380px"}
+              alt="lorempic"
+              effect="blur"
+              placeholderSrc={"/favicon.ico"}
+            />
+          </div>
+          <div className="txt_area">
+            <p className="txt">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+              molestiae vitae molestias eaque distinctio dolorem aliquam
+              repellendus provident, illo facere corrupti quibusdam minus
+              quaerat sunt mollitia deserunt. Maxime, omnis obcaecati excepturi
+              vel rerum quaerat quas molestiae totam placeat ratione. Nulla
+              optio vel beatae non numquam blanditiis ducimus, magnam aut
+            </p>
+          </div>
+        </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        <Image
-          src="https://picsum.photos/500/300?random=3"
-          width={500}
-          height={300}
-          style={{ objectFit: "contain" }}
-          alt="lorempic"
-        />
+        <h3 className="tit">It is Sample Tab</h3>
+        <div className="wrap_content_item">
+          <div className="img_area">
+            <LazyLoadImage
+              src={"https://picsum.photos/400/380?random=1"}
+              height={"280px"}
+              width={"380px"}
+              alt="lorempic"
+              effect="blur"
+              placeholderSrc={"/favicon.ico"}
+            />
+          </div>
+          <div className="txt_area">
+            <p className="txt">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+              molestiae vitae molestias eaque distinctio dolorem aliquam
+              repellendus provident, illo facere corrupti quibusdam minus
+              quaerat sunt mollitia deserunt. Maxime, omnis obcaecati excepturi
+              vel rerum quaerat quas molestiae totam placeat ratione. Nulla
+              optio vel beatae non numquam blanditiis ducimus, magnam aut
+            </p>
+          </div>
+        </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
-        <Image
-          src="https://picsum.photos/500/300?random=4"
-          width={500}
-          height={300}
-          style={{ objectFit: "contain" }}
-          alt="lorempic"
-        />
+        <h3 className="tit">It is Sample Tab</h3>
+        <div className="wrap_content_item">
+          <div className="img_area">
+            <LazyLoadImage
+              src={"https://picsum.photos/400/380?random=1"}
+              height={"280px"}
+              width={"380px"}
+              alt="lorempic"
+              effect="blur"
+              placeholderSrc={"/favicon.ico"}
+            />
+          </div>
+          <div className="txt_area">
+            <p className="txt">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+              molestiae vitae molestias eaque distinctio dolorem aliquam
+              repellendus provident, illo facere corrupti quibusdam minus
+              quaerat sunt mollitia deserunt. Maxime, omnis obcaecati excepturi
+              vel rerum quaerat quas molestiae totam placeat ratione. Nulla
+              optio vel beatae non numquam blanditiis ducimus, magnam aut
+            </p>
+          </div>
+        </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={4}>
-        <Image
-          src="https://picsum.photos/500/300?random=5"
-          width={500}
-          height={300}
-          style={{ objectFit: "contain" }}
-          alt="lorempic"
-        />
+        <h3 className="tit">It is Sample Tab</h3>
+        <div className="wrap_content_item">
+          <div className="img_area">
+            <LazyLoadImage
+              src={"https://picsum.photos/400/380?random=1"}
+              height={"280px"}
+              width={"380px"}
+              alt="lorempic"
+              effect="blur"
+              placeholderSrc={"/favicon.ico"}
+            />
+          </div>
+          <div className="txt_area">
+            <p className="txt">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+              molestiae vitae molestias eaque distinctio dolorem aliquam
+              repellendus provident, illo facere corrupti quibusdam minus
+              quaerat sunt mollitia deserunt. Maxime, omnis obcaecati excepturi
+              vel rerum quaerat quas molestiae totam placeat ratione. Nulla
+              optio vel beatae non numquam blanditiis ducimus, magnam aut
+            </p>
+          </div>
+        </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={5}>
-        <Image
-          src="https://picsum.photos/500/300?random=6"
-          width={500}
-          height={300}
-          style={{ objectFit: "contain" }}
-          alt="lorempic"
-        />
+        <h3 className="tit">It is Sample Tab</h3>
+        <div className="wrap_content_item">
+          <div className="img_area">
+            <LazyLoadImage
+              src={"https://picsum.photos/400/380?random=1"}
+              height={"280px"}
+              width={"380px"}
+              alt="lorempic"
+              effect="blur"
+              placeholderSrc={"/favicon.ico"}
+            />
+          </div>
+          <div className="txt_area">
+            <p className="txt">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+              molestiae vitae molestias eaque distinctio dolorem aliquam
+              repellendus provident, illo facere corrupti quibusdam minus
+              quaerat sunt mollitia deserunt. Maxime, omnis obcaecati excepturi
+              vel rerum quaerat quas molestiae totam placeat ratione. Nulla
+              optio vel beatae non numquam blanditiis ducimus, magnam aut
+            </p>
+          </div>
+        </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={6}>
-        <Image
-          src="https://picsum.photos/500/300?random=7"
-          width={500}
-          height={300}
-          style={{ objectFit: "contain" }}
-          alt="lorempic"
-        />
+        <h3 className="tit">It is Sample Tab</h3>
+        <div className="wrap_content_item">
+          <div className="img_area">
+            <LazyLoadImage
+              src={"https://picsum.photos/400/380?random=1"}
+              height={"280px"}
+              width={"380px"}
+              alt="lorempic"
+              effect="blur"
+              placeholderSrc={"/favicon.ico"}
+            />
+          </div>
+          <div className="txt_area">
+            <p className="txt">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+              molestiae vitae molestias eaque distinctio dolorem aliquam
+              repellendus provident, illo facere corrupti quibusdam minus
+              quaerat sunt mollitia deserunt. Maxime, omnis obcaecati excepturi
+              vel rerum quaerat quas molestiae totam placeat ratione. Nulla
+              optio vel beatae non numquam blanditiis ducimus, magnam aut
+            </p>
+          </div>
+        </div>
       </CustomTabPanel>
     </div>
   );

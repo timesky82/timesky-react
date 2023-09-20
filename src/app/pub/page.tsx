@@ -11,6 +11,7 @@ import RadioGuideComponent from "./radioGuideComponent";
 import ToggleSwitchGuideComponent from "./toggleSwitchGuideComponent";
 import ModalGuideComponent from "./modalGuideComponent";
 import TabsGuideComponent from "./tabsGuideComponent";
+import TextComponent from "./textComponent";
 //
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
