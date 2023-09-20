@@ -67,7 +67,7 @@ export default function BasicTabs() {
               width={"380px"}
               alt="lorempic"
               effect="blur"
-              placeholderSrc={"/favicon.ico"}
+              placeholderSrc={"https://basicit.co.kr/img/assets/favicon.png"}
             />
           </div>
           <div className="txt_area">
@@ -90,7 +90,7 @@ export default function BasicTabs() {
               width={"380px"}
               alt="lorempic"
               effect="blur"
-              placeholderSrc={"/favicon.ico"}
+              placeholderSrc={"https://basicit.co.kr/img/assets/favicon.png"}
             />
           </div>
           <div className="txt_area">
@@ -115,7 +115,7 @@ export default function BasicTabs() {
               width={"380px"}
               alt="lorempic"
               effect="blur"
-              placeholderSrc={"/favicon.ico"}
+              placeholderSrc={"https://basicit.co.kr/img/assets/favicon.png"}
             />
           </div>
           <div className="txt_area">
@@ -138,7 +138,7 @@ export default function BasicTabs() {
               width={"380px"}
               alt="lorempic"
               effect="blur"
-              placeholderSrc={"/favicon.ico"}
+              placeholderSrc={"@https://basicit.co.kr/img/assets/favicon.png"}
             />
           </div>
           <div className="txt_area">
@@ -160,7 +160,7 @@ export default function BasicTabs() {
               width={"380px"}
               alt="lorempic"
               effect="blur"
-              placeholderSrc={"/favicon.ico"}
+              placeholderSrc={"https://basicit.co.kr/img/assets/favicon.png"}
             />
           </div>
           <div className="txt_area">
@@ -185,7 +185,7 @@ export default function BasicTabs() {
               width={"380px"}
               alt="lorempic"
               effect="blur"
-              placeholderSrc={"/favicon.ico"}
+              placeholderSrc={"https://basicit.co.kr/img/assets/favicon.png"}
             />
           </div>
           <div className="txt_area">
@@ -203,7 +203,7 @@ export default function BasicTabs() {
               width={"380px"}
               alt="lorempic"
               effect="blur"
-              placeholderSrc={"/favicon.ico"}
+              placeholderSrc={"https://basicit.co.kr/img/assets/favicon.png"}
             />
           </div>
           <div className="txt_area">
