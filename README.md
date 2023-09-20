@@ -34,8 +34,6 @@ To learn more about this example:
 - [Customizing Material UI](https://mui.com/material-ui/customization/how-to-customize/) - approaches to customizing Material UI.  
   <br>
 
-## scss
-npm i sass
 # immer
 
 https://www.npmjs.com/package/use-immer
@@ -68,6 +66,9 @@ https://www.npmjs.com/package/use-immer
 
 - '/public/img'
   import "@/../../public/img/xxx.png"
+- lazy load
+  https://github.com/Aljullu/react-lazy-load-image-component
+  MIT License Copyright (c) 2018 Albert Juhé Lluveras
 
 4. Color
 
@@ -91,7 +92,6 @@ https://www.npmjs.com/package/use-immer
             <li>버튼</li>
           </ul>
         </li>
-
          <li>
           인풋
           <ul>
@@ -100,10 +100,6 @@ https://www.npmjs.com/package/use-immer
             <li>셀렉트</li>
              <li>라디오</li>
             <li>체크</li>
-
-
-            
-           <!-- 여기 -->
             <li>토글</li>
             <li>스위치</li>
             <li></li>
@@ -120,10 +116,14 @@ https://www.npmjs.com/package/use-immer
         </li>
 
         <li>탭</li>
+          <!-- 여기 -->
+        <li>레이지로드</li>
         <li>툴팁</li>
         <li>뱃지</li>
         <li>스낵바(토스트)</li>
         <li>아코디언</li>
+
+
         <li>
           테이블
           <ul>
