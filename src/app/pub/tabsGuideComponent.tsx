@@ -1,8 +1,10 @@
 "use client";
 import * as React from "react";
+import { useImmer } from "use-immer";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
@@ -34,183 +36,106 @@ function a11yProps(index: number) {
 }
 
 export default function BasicTabs() {
-  const [value, setValue] = React.useState(0);
-
+  const [tabVal, setTabVal] = React.useState(0);
+  // dataTab
+  const [dataTab, updateDataTab] = useImmer([
+    {
+      id: 1,
+      label: "Item 1",
+      tit: "It is Lazy Load Sample1",
+      imgSrc: "https://picsum.photos/380/280?random=1",
+      txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio obcaecati impedit sequi, amet facilis mollitia magni rerum quaerat dolore porro.",
+    },
+    {
+      id: 2,
+      label: "Item 2",
+      tit: "It is Lazy Load Sample2",
+      imgSrc: "https://picsum.photos/380/280?random=2",
+      txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit error vel hic modi animi itaque, asperiores possimus ipsa? Vitae, cupiditate. Culpa autem saepe incidunt. Quaerat maxime fugit repudiandae magni, veritatis corporis accusantium rem recusandae! Alias porro, ipsam voluptates possimus illum nostrum laudantium esse tenetur repellat eaque, praesentium qui quis.",
+    },
+    {
+      id: 3,
+      label: "Item 3",
+      tit: "It is Lazy Load Sample3",
+      imgSrc: "https://picsum.photos/380/280?random=3",
+      txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum libero ut ducimus quam nemo quis ipsum.",
+    },
+    {
+      id: 4,
+      label: "Item 4",
+      tit: "It is Lazy Load Sample4",
+      imgSrc: "https://picsum.photos/380/280?random=3",
+      txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse explicabo minima sapiente ipsum, reprehenderit recusandae rerum aliquid molestiae veniam, quidem inventore nemo?",
+    },
+    {
+      id: 5,
+      label: "Item 5",
+      tit: "It is Lazy Load Sample5",
+      imgSrc: "https://picsum.photos/380/280?random=3",
+      txt: "Lorem ipsum dolor sit amet.",
+    },
+    {
+      id: 6,
+      label: "Item 6",
+      tit: "It is Lazy Load Sample6",
+      imgSrc: "https://picsum.photos/380/280?random=3",
+      txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolor quo non architecto perspiciatis nemo porro eos reprehenderit molestiae voluptas, maxime sed quibusdam in. Eos nobis quaerat, minima voluptatibus sapiente cupiditate dicta laborum porro repellat provident ex in impedit debitis deserunt ipsum quidem earum possimus?",
+    },
+    {
+      id: 7,
+      label: "Item 7",
+      tit: "It is Lazy Load Sample77",
+      imgSrc: "https://picsum.photos/380/280?random=3",
+      txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae necessitatibus delectus eaque.",
+    },
+  ]);
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-    setValue(newValue);
+    setTabVal(newValue);
   };
 
   return (
     <div className="wrap_tab">
       <Tabs
-        value={value}
+        value={tabVal}
         onChange={handleChange}
         variant="scrollable"
         scrollButtons={true}
         aria-label="scrollable auto tabs example"
       >
-        <Tab label="Item One" {...a11yProps(0)} />
-        <Tab label="Item Two" {...a11yProps(1)} />
-        <Tab label="Item Three" {...a11yProps(2)} />
-        <Tab label="Item four" {...a11yProps(3)} />
-        <Tab label="Item five" {...a11yProps(4)} />
-        <Tab label="Item six" {...a11yProps(5)} />
-        <Tab label="Item seven" {...a11yProps(6)} />
+        {dataTab.map((dataTab, i) => {
+          return (
+            <Tab
+              label={dataTab.label}
+              {...a11yProps(dataTab.id)}
+              key={dataTab.id}
+            />
+          );
+        })}
       </Tabs>
-      <CustomTabPanel value={value} index={0}>
-        <h3 className="tit">It is Lazy Load Sample</h3>
-        <div className="wrap_content_item">
-          <div className="img_area">
-            <LazyLoadImage
-              src={"https://picsum.photos/380/280?random=1"}
-              height={"280px"}
-              width={"380px"}
-              alt="lorempic"
-              effect="blur"
-              placeholderSrc={"https://basicit.co.kr/img/assets/favicon.png"}
-            />
-          </div>
-          <div className="txt_area">
-            <p className="txt">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates, similique aliquid numquam voluptatem est aperiam
-              deserunt illo distinctio aliquam dolorum iste. Saepe eius veniam
-              quibusdam nemo placeat molestiae inventore officiis.
-            </p>
-          </div>
-        </div>
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
-        <h3 className="tit">It is Lazy Load Sample</h3>
-        <div className="wrap_content_item">
-          <div className="img_area">
-            <LazyLoadImage
-              src={"https://picsum.photos/380/280?random=2"}
-              height={"280px"}
-              width={"380px"}
-              alt="lorempic"
-              effect="blur"
-              placeholderSrc={"https://basicit.co.kr/img/assets/favicon.png"}
-            />
-          </div>
-          <div className="txt_area">
-            <p className="txt">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-              molestiae vitae molestias eaque distinctio dolorem aliquam
-              repellendus provident, illo facere corrupti quibusdam minus
-              quaerat sunt mollitia deserunt. Maxime, omnis obcaecati excepturi
-              vel rerum quaerat quas molestiae totam placeat ratione. Nulla
-              optio vel beatae non numquam blanditiis ducimus, magnam aut
-            </p>
-          </div>
-        </div>
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={2}>
-        <h3 className="tit">It is Lazy Load Sample</h3>
-        <div className="wrap_content_item">
-          <div className="img_area">
-            <LazyLoadImage
-              src={"https://picsum.photos/380/280?random=3"}
-              height={"280px"}
-              width={"380px"}
-              alt="lorempic"
-              effect="blur"
-              placeholderSrc={"https://basicit.co.kr/img/assets/favicon.png"}
-            />
-          </div>
-          <div className="txt_area">
-            <p className="txt">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-              placeat, minus nihil, in excepturi ratione consequatur modi
-              nostrum doloribus velit eius error explicabo quisquam sapiente
-              deleniti, distinctio odit at aliquid?
-            </p>
-          </div>
-        </div>
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={3}>
-        <h3 className="tit">It is Lazy Load Sample</h3>
-        <div className="wrap_content_item">
-          <div className="img_area">
-            <LazyLoadImage
-              src={"https://picsum.photos/380/280?random=4"}
-              height={"280px"}
-              width={"380px"}
-              alt="lorempic"
-              effect="blur"
-              placeholderSrc={"@https://basicit.co.kr/img/assets/favicon.png"}
-            />
-          </div>
-          <div className="txt_area">
-            <p className="txt">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
-              quos placeat tempora suscipit fugiat porro necessitatibus vel
-              atque quo vitae! Ut aut animi architecto?
-            </p>
-          </div>
-        </div>
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={4}>
-        <h3 className="tit">It is Lazy Load Sample</h3>
-        <div className="wrap_content_item">
-          <div className="img_area">
-            <LazyLoadImage
-              src={"https://picsum.photos/380/280?random=5"}
-              height={"280px"}
-              width={"380px"}
-              alt="lorempic"
-              effect="blur"
-              placeholderSrc={"https://basicit.co.kr/img/assets/favicon.png"}
-            />
-          </div>
-          <div className="txt_area">
-            <p className="txt">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-              molestiae vitae molestias eaque distinctio dolorem aliquam
-              repellendus provident, illo facere corrupti quibusdam minus
-              quaerat sunt mollitia deserunt. Maxime, omnis obcaecati excepturi
-              vel rerum quaerat quas molestiae totam placeat ratione. Nulla
-              optio vel beatae non numquam blanditiis ducimus, magnam aut
-            </p>
-          </div>
-        </div>
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={5}>
-        <h3 className="tit">It is Lazy Load Sample</h3>
-        <div className="wrap_content_item">
-          <div className="img_area">
-            <LazyLoadImage
-              src={"https://picsum.photos/380/280?random=6"}
-              height={"280px"}
-              width={"380px"}
-              alt="lorempic"
-              effect="blur"
-              placeholderSrc={"https://basicit.co.kr/img/assets/favicon.png"}
-            />
-          </div>
-          <div className="txt_area">
-            <p className="txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aut repellendus nisi laborum at sapiente et soluta quae, quam pariatur unde error?</p>
-          </div>
-        </div>
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={6}>
-        <h3 className="tit">It is Lazy Load Sample</h3>
-        <div className="wrap_content_item">
-          <div className="img_area">
-            <LazyLoadImage
-              src={"https://picsum.photos/380/280?random=7"}
-              height={"280px"}
-              width={"380px"}
-              alt="lorempic"
-              effect="blur"
-              placeholderSrc={"https://basicit.co.kr/img/assets/favicon.png"}
-            />
-          </div>
-          <div className="txt_area">
-            <p className="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia distinctio minus hic eum officiis sapiente consectetur non, dignissimos quos reiciendis! Praesentium, ex! Sequi facilis dolores repellat reprehenderit animi iusto nisi est, odio necessitatibus labore laudantium excepturi beatae cum ipsam distinctio et veritatis eum quibusdam. Esse ipsum hic debitis consectetur quibusdam!</p>
-          </div>
-        </div>
-      </CustomTabPanel>
+      {dataTab.map((dataTab, i) => {
+        return (
+          <CustomTabPanel value={tabVal} index={i} key={dataTab.id}>
+            <h3 className="tit">{dataTab.tit}</h3>
+            <div className="wrap_content_item">
+              <div className="img_area">
+                <LazyLoadImage
+                  src={dataTab.imgSrc}
+                  height={"280px"}
+                  width={"380px"}
+                  alt="lorempic"
+                  effect="blur"
+                  placeholderSrc={
+                    "https://basicit.co.kr/img/assets/favicon.png"
+                  }
+                />
+              </div>
+              <div className="txt_area">
+                <p className="txt">{dataTab.txt}</p>
+              </div>
+            </div>
+          </CustomTabPanel>
+        );
+      })}
     </div>
   );
 }

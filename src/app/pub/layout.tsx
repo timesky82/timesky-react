@@ -114,7 +114,8 @@ export default function ResponsiveDrawer(
         component="nav"
         aria-labelledby="nested-list-subheader"
       >
-        {dataGnb.map((dataGnb, i) => (
+        {dataGnb.map((dataGnb, i) => 
+        (
           <div className="drawer_list" key={dataGnb.id}>
             {dataGnb.href ? (
               ""
