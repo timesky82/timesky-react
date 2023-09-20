@@ -109,15 +109,15 @@ https://www.npmjs.com/package/use-immer
         <li>
           팝업
           <ul>
-            <li>바텀시트</li>
+
             <li>풀팝업</li>
             <li>팝업</li>
           </ul>
         </li>
 
         <li>탭</li>
-          <!-- 여기 -->
         <li>레이지로드</li>
+          <!-- 여기 -->
         <li>툴팁</li>
         <li>뱃지</li>
         <li>스낵바(토스트)</li>

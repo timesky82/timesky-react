@@ -62,7 +62,7 @@ export default function BasicTabs() {
         <div className="wrap_content_item">
           <div className="img_area">
             <LazyLoadImage
-              src={"https://picsum.photos/400/380?random=1"}
+              src={"https://picsum.photos/380/280?random=1"}
               height={"280px"}
               width={"380px"}
               alt="lorempic"
@@ -85,7 +85,7 @@ export default function BasicTabs() {
         <div className="wrap_content_item">
           <div className="img_area">
             <LazyLoadImage
-              src={"https://picsum.photos/400/380?random=1"}
+              src={"https://picsum.photos/380/280?random=2"}
               height={"280px"}
               width={"380px"}
               alt="lorempic"
@@ -110,7 +110,7 @@ export default function BasicTabs() {
         <div className="wrap_content_item">
           <div className="img_area">
             <LazyLoadImage
-              src={"https://picsum.photos/400/380?random=1"}
+              src={"https://picsum.photos/380/280?random=3"}
               height={"280px"}
               width={"380px"}
               alt="lorempic"
@@ -133,7 +133,7 @@ export default function BasicTabs() {
         <div className="wrap_content_item">
           <div className="img_area">
             <LazyLoadImage
-              src={"https://picsum.photos/400/380?random=1"}
+              src={"https://picsum.photos/380/280?random=4"}
               height={"280px"}
               width={"380px"}
               alt="lorempic"
@@ -155,7 +155,7 @@ export default function BasicTabs() {
         <div className="wrap_content_item">
           <div className="img_area">
             <LazyLoadImage
-              src={"https://picsum.photos/400/380?random=1"}
+              src={"https://picsum.photos/380/280?random=5"}
               height={"280px"}
               width={"380px"}
               alt="lorempic"
@@ -180,7 +180,7 @@ export default function BasicTabs() {
         <div className="wrap_content_item">
           <div className="img_area">
             <LazyLoadImage
-              src={"https://picsum.photos/400/380?random=1"}
+              src={"https://picsum.photos/380/280?random=6"}
               height={"280px"}
               width={"380px"}
               alt="lorempic"
@@ -198,7 +198,7 @@ export default function BasicTabs() {
         <div className="wrap_content_item">
           <div className="img_area">
             <LazyLoadImage
-              src={"https://picsum.photos/400/380?random=1"}
+              src={"https://picsum.photos/380/280?random=7"}
               height={"280px"}
               width={"380px"}
               alt="lorempic"
