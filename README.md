@@ -1,4 +1,4 @@
-# 베이직 인터네셔널  React 퍼블리싱 가이드
+# 베이직 인터네셔널 React 퍼블리싱 가이드
 
 - Material UI - Next.js App Router example in TypeScript
 - NextJs
@@ -122,10 +122,11 @@ To learn more about this example:
         <li>탭</li>
         <li>레이지로드</li> -->
 
+      <!-- 
         <li>툴팁</li>
         <li>뱃지</li>
         <li>스낵바(토스트)</li>
-        <li>아코디언</li>
+        <li>아코디언</li> -->
 
         <!-- 0921 -->
         <li>
