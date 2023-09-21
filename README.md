@@ -1,9 +1,7 @@
 # 베이직 인터네셔널  React 퍼블리싱 가이드
 
-
 - Material UI - Next.js App Router example in TypeScript
 - NextJs
-
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with Material UI installed.
 
@@ -41,7 +39,7 @@ To learn more about this example:
 
 # immer
 
-https://www.npmjs.com/package/use-immer
+<https://www.npmjs.com/package/use-immer>
 
 # GUIDE
 
@@ -63,9 +61,9 @@ https://www.npmjs.com/package/use-immer
    <https://scripts.sil.org/OFL> 'Pretendard'
 
    Ionicons, v4.2.4
-   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
-   https://twitter.com/benjsperry https://twitter.com/ionicframework
-   MIT License: https://github.com/driftyco/ionicons
+   Created by Ben Sperry for the Ionic Framework, <http://ionicons.com/>
+   <https://twitter.com/benjsperry> <https://twitter.com/ionicframework>
+   MIT License: <https://github.com/driftyco/ionicons>
 
 3. Image
 
@@ -73,7 +71,7 @@ https://www.npmjs.com/package/use-immer
   import "@/../../public/img/xxx.png"
 
 - lazy load
-  https://github.com/Aljullu/react-lazy-load-image-component
+  <https://github.com/Aljullu/react-lazy-load-image-component>
   MIT License Copyright (c) 2018 Albert Juhé Lluveras
 
 4. Color
