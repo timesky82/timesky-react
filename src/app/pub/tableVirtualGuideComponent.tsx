@@ -137,7 +137,7 @@ function rowContent(_index: number, row: Data) {
 
 export default function ReactVirtualizedTable() {
   return (
-    <div style={{ height: 400, width: "100%" }}>
+    <div style={{ height: 400, width: "100%", marginBottom: "40px" }}>
       <h3 className="mb10">버츄얼 테이블</h3>
       <TableVirtuoso
         data={rows}
