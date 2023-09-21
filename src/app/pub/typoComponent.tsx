@@ -22,48 +22,50 @@ export default function TypoComponent() {
         <br />
       </div>
       <Box sx={{ width: "100%" }}>
-        <div className="mb20">
-          <h1>h1 베이직 인터내셔널 basicit.co.kr </h1>
+        <div className="mb30">
+          <h1>h1 --베이직 인터내셔널 basicit.co.kr </h1>
           <p className="text_body">
             font-weight: 500; font-size: 48px; line-height: 1.167; color: #333;
           </p>
         </div>
-        <div className="mb20">
-          <h2>h2 베이직 인터내셔널 basicit.co.kr </h2>
+        <div className="mb30">
+          <h2>h2 --베이직 인터내셔널 basicit.co.kr </h2>
           <p className="text_body mb10">
             font-weight: 700; font-size: 28px; line-height: 1.167; color: #333;
           </p>
         </div>
-        <div className="mb20">
-          <h3>.text_body 베이직 인터내셔널 basicit.co.kr </h3>
+        <div className="mb30">
+          <h3 className="text_body">
+            .text_body --베이직 인터내셔널 basicit.co.kr{" "}
+          </h3>
           <p className="text_body mb10">
             font-weight: 600; font-size: 24px; line-height: 1.167; color: #333;
           </p>
         </div>
 
-        <div className="mb20">
+        <div className="mb30">
           <p className="text_body2">
-            text_body2 베이직 인터내셔널 basicit.co.kr
+            text_body2 --베이직 인터내셔널 basicit.co.kr
           </p>
           <p className="text_body mb10">
             font-weight: 400; font-size: 16px; line-height: 1.167; color: #333;
           </p>
         </div>
-        <div className="mb20">
+        <div className="mb30">
           <p className="text_body2 mb10">
-            text_12 베이직 인터내셔널 basicit.co.kr
+            text_12 --베이직 인터내셔널 basicit.co.kr
           </p>
-          <p className="text_body "> font-size: 18px; line-height: 1.5;</p>
+          <p className="text_body "> font-size: 12px; font-weight: 600;</p>
         </div>
-        <div className="mb20">
+        <div className="mb30">
           <p className="text_16 mb10">
-            text_16 베이직 인터내셔널 basicit.co.kr
+            text_16 --베이직 인터내셔널 basicit.co.kr
           </p>
           <p className="text_body ">font-size: 16px;</p>
         </div>
-        <div className="mb20">
+        <div className="mb30">
           <p className="text_24 mb10">
-            text_24 베이직 인터내셔널 basicit.co.kr
+            text_24 --베이직 인터내셔널 basicit.co.kr
           </p>
           <p className="text_body ">font-size: 24px;</p>
         </div>
