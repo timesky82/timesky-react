@@ -11,7 +11,7 @@ import RadioGuideComponent from "./radioGuideComponent";
 import ToggleSwitchGuideComponent from "./toggleSwitchGuideComponent";
 import ModalGuideComponent from "./modalGuideComponent";
 import TabsGuideComponent from "./tabsGuideComponent";
-import TextComponent from "./textComponent";
+import TooltipGuideComponent from "./tooltipGuideComponent";
 //
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -31,7 +31,10 @@ export default function GuidePage() {
     { id: 6, open: false },
     { id: 7, open: false },
     { id: 8, open: false },
-    { id: 9, open: true },
+    { id: 9, open: false },
+    { id: 10, open: true },
+    { id: 11, open: true },
+    { id: 12, open: true },
   ]);
   const accToggle = (index: any) => {
     return (event: any) => {
@@ -43,7 +46,6 @@ export default function GuidePage() {
   };
   return (
     <React.StrictMode>
-      
       <div className="acc_list_basic">
         <Accordion
           disableGutters={true}
@@ -223,6 +225,24 @@ export default function GuidePage() {
           </AccordionSummary>
           <AccordionDetails>
             <TabsGuideComponent />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          disableGutters={true}
+          expanded={dataAcc[10].open}
+          onChange={accToggle(dataAcc[10].id)}
+          elevation={0}
+        >
+          <AccordionSummary aria-controls="panel1bh-content">
+            <h3 className="tit">툴팁, 뱃지, 스낵바</h3>
+            {dataAcc[10].open ? (
+              <i className="ion ion-ios-arrow-up"></i>
+            ) : (
+              <i className="ion ion-ios-arrow-down"></i>
+            )}
+          </AccordionSummary>
+          <AccordionDetails>
+            <TooltipGuideComponent />
           </AccordionDetails>
         </Accordion>
       </div>
