@@ -1,4 +1,5 @@
 /* eslint-disable react/display-name */
+// forwardRef 관련 display name 이슈
 "use client";
 import * as React from "react";
 import Table from "@mui/material/Table";
@@ -79,7 +80,7 @@ const columns: ColumnData[] = [
   },
 ];
 
-const rows: Data[] = Array.from({ length: 200 }, (_, index) => {
+const rows: Data[] = Array.from({ length: 10000 }, (_, index) => {
   const randomSelection = sample[Math.floor(Math.random() * sample.length)];
   return createData(index, ...randomSelection);
 });
