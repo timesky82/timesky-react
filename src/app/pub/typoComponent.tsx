@@ -36,10 +36,10 @@ export default function TypoComponent() {
         </div>
         <div className="mb30">
           <h3 className="text_body">
-            .text_body --베이직 인터내셔널 basicit.co.kr{" "}
+            text_body --베이직 인터내셔널 basicit.co.kr{" "}
           </h3>
           <p className="text_body mb10">
-            font-weight: 600; font-size: 24px; line-height: 1.167; color: #333;
+            font-weight: 400; font-size: 16px; line-height: 1.167; color: #333;
           </p>
         </div>
 
@@ -47,9 +47,7 @@ export default function TypoComponent() {
           <p className="text_body2">
             text_body2 --베이직 인터내셔널 basicit.co.kr
           </p>
-          <p className="text_body mb10">
-            font-weight: 400; font-size: 16px; line-height: 1.167; color: #333;
-          </p>
+          <p className="text_body mb10">font-size: 18px; line-height: 1.5;</p>
         </div>
         <div className="mb30">
           <p className="text_body2 mb10">
