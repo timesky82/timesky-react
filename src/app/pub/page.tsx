@@ -263,7 +263,7 @@ export default function GuidePage() {
           </AccordionSummary>
           <AccordionDetails>
             <TableGuideComponent />
-            {/* <TableVirtualGuideComponent /> */}
+            <TableVirtualGuideComponent />
           </AccordionDetails>
         </Accordion>
       </div>
