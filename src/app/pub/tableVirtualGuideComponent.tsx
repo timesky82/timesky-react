@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 "use client";
 import * as React from "react";
 import Table from "@mui/material/Table";
@@ -87,6 +88,7 @@ const VirtuosoTableComponents: TableComponents<Data> = {
   Scroller: React.forwardRef<HTMLDivElement>((props, ref) => (
     <TableContainer component={Paper} {...props} ref={ref} elevation={0} />
   )),
+
   Table: (props) => (
     <Table
       {...props}
@@ -98,7 +100,9 @@ const VirtuosoTableComponents: TableComponents<Data> = {
   TableBody: React.forwardRef<HTMLTableSectionElement>((props, ref) => (
     <TableBody {...props} ref={ref} />
   )),
+   
 };
+
 
 function fixedHeaderContent() {
   return (
