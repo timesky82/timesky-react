@@ -75,6 +75,12 @@ To learn more about this example:
   MIT License Copyright (c) 2018 Albert Juhé Lluveras
 
 4. Color
+5. table
+
+  - 버추얼 테이블
+    'https://github.com/petyosi/react-virtuoso'
+    MIT License
+    Copyright (c) 2020 Petyo Ivanov
 
   <!-- <h2>api </h2>
       <ol>
@@ -122,7 +128,7 @@ To learn more about this example:
         <li>탭</li>
         <li>레이지로드</li> -->
 
-      <!-- 
+      <!--
         <li>툴팁</li>
         <li>뱃지</li>
         <li>스낵바(토스트)</li>
