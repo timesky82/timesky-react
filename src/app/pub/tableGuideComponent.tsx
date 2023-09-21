@@ -11,7 +11,7 @@ import TablePagination from "@mui/material/TablePagination";
 import Pagination from "@mui/material/Pagination";
 import TableRow from "@mui/material/TableRow";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { useTheme } from "@emotion/react";
+// table
 interface Column {
   id: "name" | "code" | "population" | "size" | "density";
   label: string;
@@ -114,7 +114,7 @@ export default function StickyHeadTable() {
 
   return (
     <div>
-      <h3 className="mb10"> 테이블 샘플</h3>
+      <h3 className="mb10"> 테이블</h3>
       <TableContainer sx={{ maxHeight: 440 }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
@@ -153,7 +153,7 @@ export default function StickyHeadTable() {
         </Table>
       </TableContainer>
       <TablePagination
-      className="mb30"
+        className="mb30"
         rowsPerPageOptions={[10, 25, 100]}
         component="div"
         count={rows.length}
@@ -162,24 +162,7 @@ export default function StickyHeadTable() {
         onPageChange={handleChangePage}
         onRowsPerPageChange={handleChangeRowsPerPage}
       />
-      <h3 className="mb20">Pagination</h3>
-      {useMediaQuery("(max-width:600px)") ? (
-        <Pagination
-          size="small"
-          count={10}
-          defaultPage={1}
-          siblingCount={0}
-        />
-      ) : (
-        <Pagination
-          count={10}
-          defaultPage={1}
-          boundaryCount={2}
-          size="small"
-          showFirstButton
-          showLastButton
-        />
-      )}
+      
     </div>
   );
 }

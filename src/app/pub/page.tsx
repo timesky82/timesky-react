@@ -13,6 +13,7 @@ import ModalGuideComponent from "./modalGuideComponent";
 import TabsGuideComponent from "./tabsGuideComponent";
 import TooltipGuideComponent from "./tooltipGuideComponent";
 import TableGuideComponent from "./tableGuideComponent";
+import TableVirtualGuideComponent from "./tableVirtualGuideComponent";
 //
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -262,6 +263,7 @@ export default function GuidePage() {
           </AccordionSummary>
           <AccordionDetails>
             <TableGuideComponent />
+            <TableVirtualGuideComponent />
           </AccordionDetails>
         </Accordion>
       </div>

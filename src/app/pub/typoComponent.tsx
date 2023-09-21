@@ -50,7 +50,7 @@ export default function TypoComponent() {
           <p className="text_body mb10">font-size: 18px; line-height: 1.5;</p>
         </div>
         <div className="mb30">
-          <p className="text_body2 mb10">
+          <p className="text_12 mb10">
             text_12 --베이직 인터내셔널 basicit.co.kr
           </p>
           <p className="text_body "> font-size: 12px; font-weight: 600;</p>
