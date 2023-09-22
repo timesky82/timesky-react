@@ -4,8 +4,7 @@ import { useImmer } from "use-immer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "@/../../public/scss/swiper.scss";
 import Image from "next/image";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-
+import "swiper/css/effect-fade";
 import {
   Navigation,
   Pagination,
@@ -70,7 +69,6 @@ export default function CarouselComponent() {
   ]);
   return (
     <Swiper
-      // cssMode={true}
       navigation={true}
       pagination={true}
       mousewheel={false}
@@ -84,6 +82,7 @@ export default function CarouselComponent() {
         Autoplay,
         EffectFade,
       ]}
+      effect={"fade"}
       autoplay={{
         delay: 3500,
         disableOnInteraction: false,
