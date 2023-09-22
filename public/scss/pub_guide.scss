@@ -161,7 +161,6 @@ body {
 
 .sample_swiper {
     padding-bottom: 50px;
-    margin-left: -12px;
     .swiper-button-prev,
     .swiper-button-next {
         margin-top: -180px;
@@ -184,6 +183,7 @@ body {
         .img_area {
             max-width: 100%;
             margin-bottom: 40px;
+            touch-action: none;
         }
         .txt_area {
             max-width: 390px;
@@ -192,6 +192,7 @@ body {
             color: #555;
             height: 230px;
             overflow: auto;
+            touch-action: none;
         }
     }
 }
