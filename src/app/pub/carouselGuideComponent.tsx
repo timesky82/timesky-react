@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 import { useImmer } from "use-immer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "@/../../public/scss/swiper.scss";
-
+import Image from "next/image";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import {
@@ -14,10 +14,9 @@ import {
   EffectFade,
 } from "swiper/modules";
 
-
 export default function CarouselComponent() {
-  // dataTab
-  const [dataTab, updateDataTab] = useImmer([
+  // dataCarousel
+  const [dataCarousel, updateCarousel] = useImmer([
     {
       id: 1,
       label: "Item 1",
@@ -70,34 +69,34 @@ export default function CarouselComponent() {
   ]);
   return (
     <Swiper
-      // cssMode={true}
+      cssMode={true}
       navigation={true}
       pagination={true}
       mousewheel={false}
       keyboard={true}
       modules={[Navigation, Pagination, Mousewheel, Keyboard, EffectFade]}
       effect={"fade"}
-      className="sample_swiper "
+      className="sample_swiper"
     >
-      {dataTab.map((dataTab, i) => {
+      {dataCarousel.map((dataCarousel, i) => {
         return (
-          <SwiperSlide key={dataTab.id}>
-            <h3 className="tit">{dataTab.tit}</h3>
+          <SwiperSlide key={dataCarousel.id}>
+            <h3 className="tit">{dataCarousel.tit}</h3>
             <div className="slide_item">
               <div className="img_area">
-                <LazyLoadImage
-                  src={dataTab.imgSrc}
-                  height={"280px"}
-                  width={"400px"}
+                <Image
+                  src={dataCarousel.imgSrc}
+                  width={280}
+                  height={280}
+                  style={{
+                    width: "auto",
+                    height: "280px",
+                  }}
                   alt="lorempic"
-                  effect="blur"
-                  placeholderSrc={
-                    "https://basicit.co.kr/img/assets/favicon.png"
-                  }
                 />
               </div>
               <div className="txt_area">
-                <p className="txt">{dataTab.txt}</p>
+                <p className="txt">{dataCarousel.txt}</p>
               </div>
             </div>
           </SwiperSlide>
