@@ -148,11 +148,11 @@ To learn more about this example:
           </ul>
         </li> -->
 
-        <li>
+        <!-- <li>
           갤러리
           <ul>
             <li>masony</li>
             <li>캐러셀</li>
           </ul>
         </li>
-      </ol>
+      </ol> -->

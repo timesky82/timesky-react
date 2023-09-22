@@ -14,7 +14,8 @@ import {
   EffectFade,
 } from "swiper/modules";
 
-export default function carousel() {
+
+export default function CarouselComponent() {
   // dataTab
   const [dataTab, updateDataTab] = useImmer([
     {
@@ -78,10 +79,9 @@ export default function carousel() {
       effect={"fade"}
       className="sample_swiper "
     >
-
       {dataTab.map((dataTab, i) => {
         return (
-          <SwiperSlide  key={dataTab.id}>
+          <SwiperSlide key={dataTab.id}>
             <h3 className="tit">{dataTab.tit}</h3>
             <div className="slide_item">
               <div className="img_area">
