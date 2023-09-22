@@ -12,6 +12,7 @@ import {
   Mousewheel,
   Keyboard,
   EffectFade,
+  Autoplay,
 } from "swiper/modules";
 
 export default function CarouselComponent() {
@@ -74,8 +75,18 @@ export default function CarouselComponent() {
       pagination={true}
       mousewheel={false}
       keyboard={true}
-      modules={[Navigation, Pagination, Mousewheel, Keyboard, EffectFade]}
-      effect={"fade"}
+      modules={[
+        Navigation,
+        Pagination,
+        Mousewheel,
+        Keyboard,
+        Autoplay,
+        EffectFade,
+      ]}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
       className="sample_swiper"
     >
       {dataCarousel.map((dataCarousel, i) => {
