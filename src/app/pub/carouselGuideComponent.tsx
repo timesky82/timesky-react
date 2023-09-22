@@ -75,6 +75,7 @@ export default function CarouselComponent() {
       pagination={true}
       mousewheel={false}
       keyboard={true}
+      lazyPreloadPrevNext={1}
       modules={[
         Navigation,
         Pagination,
@@ -99,9 +100,10 @@ export default function CarouselComponent() {
                   src={dataCarousel.imgSrc}
                   width={280}
                   height={280}
+                  loading="lazy"
                   style={{
-                    width: "auto",
-                    height: "280px",
+                    width: "280px",
+                    height: "auto",
                   }}
                   alt="lorempic"
                 />
