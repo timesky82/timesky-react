@@ -30,7 +30,7 @@ export default function CarouselComponent() {
       label: "Item 2",
       tit: "It is Lazy Load Sample2",
       imgSrc: "https://picsum.photos/380/280?random=2",
-      txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit error vel hic modi animi itaque, asperiores possimus ipsa? Vitae, cupiditate. Culpa autem saepe incidunt. Quaerat maxime fugit repudiandae magni, veritatis corporis accusantium rem recusandae! Alias porro, ipsam voluptates possimus illum nostrum laudantium esse tenetur repellat eaque, praesentium qui quis.",
+      txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit error vel hic modi animi itaque, asperiores possimus ipsa? Vitae, cupiditate. Culpa autem saepe incidunt.",
     },
     {
       id: 3,
@@ -85,7 +85,7 @@ export default function CarouselComponent() {
         EffectFade,
       ]}
       autoplay={{
-        delay: 2500,
+        delay: 3500,
         disableOnInteraction: false,
       }}
       className="sample_swiper"
