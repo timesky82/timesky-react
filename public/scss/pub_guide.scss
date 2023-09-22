@@ -11,6 +11,9 @@ body {
 }
 .acc_list_basic {
     .MuiAccordion-root {
+        &:before {
+            z-index: 10;
+        }
         &.Mui-expanded {
             .MuiAccordionSummary-root {
                 background: var(--color-gray-02);
