@@ -134,15 +134,14 @@ To learn more about this example:
         <li>스낵바(토스트)</li>
         <li>아코디언</li> -->
 
-        <!-- 0921 -->
+<!-- 
         <li>
           테이블
           <ul>
             <li>버추얼테이블</li>
             <li>pagination</li>
           </ul>
-        </li>
-         <!-- 0922 -->
+        </li> -->
         <li>
           갤러리
           <ul>

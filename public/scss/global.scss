@@ -118,10 +118,14 @@ body {
     height: auto !important;
     filter: blur(10px);
 }
+.MuiImageListItem-masonry {
+    width: 100%;
+}
 
 .lazy-load-image-background.blur.lazy-load-image-loaded {
     filter: blur(0);
     transition: filter 0.3s;
+    width: 100%;
 }
 
 .lazy-load-image-background.blur > img {

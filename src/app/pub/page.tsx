@@ -14,6 +14,7 @@ import TabsGuideComponent from "./tabsGuideComponent";
 import TooltipGuideComponent from "./tooltipGuideComponent";
 import TableGuideComponent from "./tableGuideComponent";
 import TableVirtualGuideComponent from "./tableVirtualGuideComponent";
+import GallayGuideComponent from "./gallayGuideComponent";
 //
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -35,7 +36,7 @@ export default function GuidePage() {
     { id: 8, open: false },
     { id: 9, open: false },
     { id: 10, open: false },
-    { id: 11, open: true },
+    { id: 11, open: false },
     { id: 12, open: true },
   ]);
   const accToggle = (index: any) => {
@@ -264,6 +265,24 @@ export default function GuidePage() {
           <AccordionDetails>
             <TableGuideComponent />
             <TableVirtualGuideComponent />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          disableGutters={true}
+          expanded={dataAcc[12].open}
+          onChange={accToggle(dataAcc[12].id)}
+          elevation={0}
+        >
+          <AccordionSummary aria-controls="panel1bh-content">
+            <h3 className="tit">갤러리</h3>
+            {dataAcc[12].open ? (
+              <i className="ion ion-ios-arrow-up"></i>
+            ) : (
+              <i className="ion ion-ios-arrow-down"></i>
+            )}
+          </AccordionSummary>
+          <AccordionDetails>
+            <GallayGuideComponent />
           </AccordionDetails>
         </Accordion>
       </div>
