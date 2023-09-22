@@ -70,7 +70,7 @@ export default function CarouselComponent() {
   ]);
   return (
     <Swiper
-      cssMode={true}
+      // cssMode={true}
       navigation={true}
       pagination={true}
       mousewheel={false}
