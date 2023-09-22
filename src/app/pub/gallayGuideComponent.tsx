@@ -121,11 +121,11 @@ export default function StandardImageList() {
       <h3 className="mb10">masonry 갤러리</h3>
       <ImageList cols={3} gap={8} variant="masonry">
         {masonryData.map((item) => (
-          <ImageListItem key={item.img} className="mb30">
+          <ImageListItem key={item.img} className="">
             <LazyLoadImage
-              srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+              srcSet={`${item.img}`}
               effect="blur"
-              src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+              src={`${item.img}`}
               alt={item.title}
               placeholderSrc={"https://basicit.co.kr/img/assets/favicon.png"}
             />

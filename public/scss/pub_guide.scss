@@ -155,3 +155,38 @@ body {
         }
     }
 }
+
+.sample_swiper {
+    padding-bottom: 50px;
+    .swiper-button-prev,
+    .swiper-button-next {
+        margin-top: -180px;
+    }
+    .swiper-slide {
+        min-height: 300px;
+        & > .tit {
+            text-align: center;
+        }
+    }
+    .swiper-pagination-bullets {
+        bottom: 20px;
+    }
+    .slide_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        .img_area {
+            margin-bottom: 40px;
+        }
+        .txt_area {
+            max-width: 390px;
+            line-height: 1.5;
+            font-size: 18px;
+            color: #555;
+            height: 230px;
+            overflow: auto;
+        }
+    }
+}
