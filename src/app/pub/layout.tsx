@@ -63,7 +63,7 @@ export default function ResponsiveDrawer(
       depth1: "testCoin",
       icon: "",
       open: false,
-      href: '/testCoin',
+      href: '../testCoin',
       // subMenu: [
       //   { id: "1_1", depth2: "depth1-1", icon: "", href: "/testCoin" },
       //   { id: "1_2", depth2: "depth1-2", icon: "", href: "#" },
