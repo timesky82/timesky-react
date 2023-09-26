@@ -60,14 +60,14 @@ export default function ResponsiveDrawer(
   const [dataGnb, updateDataGnb] = useImmer([
     {
       id: 1,
-      depth1: "depth1-1",
+      depth1: "testCoin",
       icon: "",
       open: false,
-      href: null,
-      subMenu: [
-        { id: "1_1", depth2: "depth1-1", icon: "", href: "#" },
-        { id: "1_2", depth2: "depth1-2", icon: "", href: "#" },
-      ],
+      href: '/testCoin',
+      // subMenu: [
+      //   { id: "1_1", depth2: "depth1-1", icon: "", href: "/testCoin" },
+      //   { id: "1_2", depth2: "depth1-2", icon: "", href: "#" },
+      // ],
     },
     {
       id: 2,
@@ -114,11 +114,12 @@ export default function ResponsiveDrawer(
         component="nav"
         aria-labelledby="nested-list-subheader"
       >
-        {dataGnb.map((dataGnb, i) => 
-        (
+        {dataGnb.map((dataGnb, i) => (
           <div className="drawer_list" key={dataGnb.id}>
             {dataGnb.href ? (
-              ""
+              <Button variant="text" className="btn_list text_prmiary" href={dataGnb.href}>
+                {dataGnb.depth1}
+              </Button>
             ) : (
               <Button
                 variant="text"

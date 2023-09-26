@@ -1,5 +1,6 @@
 .MuiButton-contained,
-.MuiButton-outlined {
+.MuiButton-outlined,
+.MuiButtonBase-root {
     &.text_white {
         border-color: var(--color-white) !important;
     }
