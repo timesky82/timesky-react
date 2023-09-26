@@ -11,10 +11,11 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import "@/../../public/scss/sample.scss";
+// import { SampleType } from "@/components/Type";
+
 export default function TasksPage() {
   const [loading, setLoading] = useState(true);
-  const [coinData, setCoinData] = useState(
-   []);
+  const [coinData, setCoinData] = useState([] as any[]);
   const options = {
     animationData: ani_loading,
     loop: true,
