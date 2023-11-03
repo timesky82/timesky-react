@@ -65,7 +65,7 @@ export default function TasksPage() {
         </div>
       ) : (
         <div>
-          test
+          test marketCap Chart
           <SampleChart chartID="tree-map" chartData={mapData}></SampleChart>
         </div>
       )}
