@@ -49,13 +49,14 @@ export default function TasksPage() {
       return {
         name: data.CoinInfo.FullName,
         id: data.CoinInfo.Id,
-        price: data.RAW.KRW.PRICE,
-        cap: data.RAW.KRW.MKTCAP,
+        price: data.DISPLAY?.KRW.PRICE,
+        cap: data.RAW?.KRW.MKTCAP,
         img: data.CoinInfo.ImageUrl,
       };
     });
     setmapData(dataTreeMap);
   }, [loading]);
+  console.log("mapData", mapData[0]);
   return (
     <>
       {loading ? (

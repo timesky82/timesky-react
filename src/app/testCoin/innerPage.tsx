@@ -74,10 +74,18 @@ export default function TasksPage() {
                   <TableCell align={"center"}>
                     <strong className="text_h3">인덱스</strong>
                   </TableCell>
-                  <TableCell align={"center"}><strong className="text_h3">로고</strong></TableCell>
-                  <TableCell align={"right"}><strong className="text_h3">가격</strong></TableCell>
-                  <TableCell align={"center"}><strong className="text_h3">Full Name</strong></TableCell>
-                  <TableCell align={"center"}><strong className="text_h3">평가</strong></TableCell>
+                  <TableCell align={"center"}>
+                    <strong className="text_h3">로고</strong>
+                  </TableCell>
+                  <TableCell align={"right"}>
+                    <strong className="text_h3">가격</strong>
+                  </TableCell>
+                  <TableCell align={"center"}>
+                    <strong className="text_h3">Full Name</strong>
+                  </TableCell>
+                  <TableCell align={"center"}>
+                    <strong className="text_h3">평가</strong>
+                  </TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
