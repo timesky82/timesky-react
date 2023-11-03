@@ -56,7 +56,7 @@ export default function TasksPage() {
     });
     setmapData(dataTreeMap);
   }, [loading]);
-  console.log("mapData", mapData[0]);
+  console.log("mapData", mapData);
   return (
     <>
       {loading ? (
