@@ -2,7 +2,7 @@
 // import type { Metadata } from "next";
 import * as React from "react";
 import { useImmer } from "use-immer";
-import Link from "next/link";
+// import Link from "next/link";
 import { Breakpoint, Theme, useTheme, createTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import ThemeRegistry from "@/ThemeRegistry/ThemeRegistry";
@@ -60,14 +60,14 @@ export default function ResponsiveDrawer(
   const [dataGnb, updateDataGnb] = useImmer([
     {
       id: 1,
-      depth1: "depth1-1",
+      depth1: "testCoin",
       icon: "",
       open: false,
-      href: null,
-      subMenu: [
-        { id: "1_1", depth2: "depth1-1", icon: "", href: "#" },
-        { id: "1_2", depth2: "depth1-2", icon: "", href: "#" },
-      ],
+      href: '../testCoin',
+      // subMenu: [
+      //   { id: "1_1", depth2: "depth1-1", icon: "", href: "/testCoin" },
+      //   { id: "1_2", depth2: "depth1-2", icon: "", href: "#" },
+      // ],
     },
     {
       id: 2,
@@ -117,7 +117,9 @@ export default function ResponsiveDrawer(
         {dataGnb.map((dataGnb, i) => (
           <div className="drawer_list" key={dataGnb.id}>
             {dataGnb.href ? (
-              ""
+              <Button variant="text" className="btn_list text_prmiary" href={dataGnb.href}>
+                {dataGnb.depth1}
+              </Button>
             ) : (
               <Button
                 variant="text"

@@ -1,4 +1,7 @@
-# Material UI - Next.js App Router example in TypeScript
+# 베이직 인터네셔널 React 퍼블리싱 가이드
+
+- Material UI - Next.js App Router example in TypeScript
+- NextJs
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with Material UI installed.
  <!--  -->
@@ -34,11 +37,9 @@ To learn more about this example:
 - [Customizing Material UI](https://mui.com/material-ui/customization/how-to-customize/) - approaches to customizing Material UI.  
   <br>
 
-## scss
-npm i sass
 # immer
 
-https://www.npmjs.com/package/use-immer
+<https://www.npmjs.com/package/use-immer>
 
 # GUIDE
 
@@ -60,82 +61,98 @@ https://www.npmjs.com/package/use-immer
    <https://scripts.sil.org/OFL> 'Pretendard'
 
    Ionicons, v4.2.4
-   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
-   https://twitter.com/benjsperry https://twitter.com/ionicframework
-   MIT License: https://github.com/driftyco/ionicons
+   Created by Ben Sperry for the Ionic Framework, <http://ionicons.com/>
+   <https://twitter.com/benjsperry> <https://twitter.com/ionicframework>
+   MIT License: <https://github.com/driftyco/ionicons>
 
 3. Image
 
 - '/public/img'
   import "@/../../public/img/xxx.png"
 
+- lazy load
+  <https://github.com/Aljullu/react-lazy-load-image-component>
+  MIT License Copyright (c) 2018 Albert Juhé Lluveras
+
 4. Color
+5. table
 
-  <h2>api </h2>
-      <ol>
-        <li>datapicker</li>
-        <li>tree-view</li>
-        <li>calender</li>
-        <li>lottie</li>
-        <li>chart</li>
-      </ol>
-      <h2>basic</h2>
-      <ol>
-        <li>타이포</li>
-        <li>컬러</li>
-        <li>아이콘</li>
-        <li>
-          버튼
-          <ul>
-            <li>토글버튼</li>
-            <li>버튼</li>
-          </ul>
-        </li>
+- 버추얼 테이블
+  'https://github.com/petyosi/react-virtuoso'
+  MIT License
+  Copyright (c) 2020 Petyo Ivanov
 
-         <li>
-          인풋
-          <ul>
-            <li>텍스트</li>
-            <li>텍스트 에어리어</li>
-            <li>셀렉트</li>
-             <li>라디오</li>
-            <li>체크</li>
+6.  carousel
 
+- https://github.com/nolimits4web/swiper/
+- https://swiperjs.com/demos
+- The MIT License (MIT) Copyright (c) 2019 Vladimir Kharlampidi
+<!-- <h2>api </h2>
+<ol>
+<li>datapicker</li>
+<li>tree-view</li>
+<li>calender</li>
+<li>lottie</li>
+<li>chart</li>
+</ol>
+<h2>basic</h2>
+<ol>
+<li>타이포</li>
+<li>컬러</li>
+<li>아이콘</li>
+<li>
+버튼
+<ul>
+<li>토글버튼</li>
+<li>버튼</li>
+</ul>
+</li>
+<li>
+인풋
+<ul>
+<li>텍스트</li>
+<li>텍스트 에어리어</li>
+<li>셀렉트</li>
+<li>라디오</li>
+<li>체크</li>
+<li>토글</li>
+<li>스위치</li>
+<li></li>
 
-            
-           <!-- 여기 -->
-            <li>토글</li>
-            <li>스위치</li>
-            <li></li>
+            </ul>
+          </li>
+          <li>
+            팝업
+            <ul>
 
-          </ul>
-        </li>
-        <li>
-          팝업
-          <ul>
-            <li>바텀시트</li>
-            <li>풀팝업</li>
-            <li>팝업</li>
-          </ul>
-        </li>
+              <li>풀팝업</li>
+              <li>팝업</li>
+            </ul>
+          </li>
 
-        <li>탭</li>
-        <li>툴팁</li>
-        <li>뱃지</li>
-        <li>스낵바(토스트)</li>
-        <li>아코디언</li>
+          <li>탭</li>
+          <li>레이지로드</li> -->
+
+        <!--
+          <li>툴팁</li>
+          <li>뱃지</li>
+          <li>스낵바(토스트)</li>
+          <li>아코디언</li> -->
+
+<!--
         <li>
           테이블
           <ul>
             <li>버추얼테이블</li>
             <li>pagination</li>
           </ul>
-        </li>
-        <li>
+        </li> -->
+
+        <!-- <li>
           갤러리
           <ul>
             <li>masony</li>
             <li>캐러셀</li>
           </ul>
         </li>
-      </ol>
+      </ol> -->

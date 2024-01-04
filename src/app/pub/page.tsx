@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-// 
+//
 import ColorGuideComponent from "./colorComponent";
 import TypoGuideComponent from "./typoComponent";
 import IconGuideComponent from "./ioniconComponent";
@@ -9,7 +9,14 @@ import InputGuideComponent from "./inputComponent";
 import SelectGuideComponent from "./selectComponent";
 import RadioGuideComponent from "./radioGuideComponent";
 import ToggleSwitchGuideComponent from "./toggleSwitchGuideComponent";
-// 
+import ModalGuideComponent from "./modalGuideComponent";
+import TabsGuideComponent from "./tabsGuideComponent";
+import TooltipGuideComponent from "./tooltipGuideComponent";
+import TableGuideComponent from "./tableGuideComponent";
+import TableVirtualGuideComponent from "./tableVirtualGuideComponent";
+import GallayGuideComponent from "./gallayGuideComponent";
+import CarouselGuideComponent from "./carouselGuideComponent";
+//
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -26,8 +33,13 @@ export default function GuidePage() {
     { id: 4, open: false },
     { id: 5, open: false },
     { id: 6, open: false },
-    { id: 7, open: true },
+    { id: 7, open: false },
     { id: 8, open: false },
+    { id: 9, open: false },
+    { id: 10, open: false },
+    { id: 11, open: false },
+    { id: 12, open: false },
+    { id: 13, open: true },
   ]);
   const accToggle = (index: any) => {
     return (event: any) => {
@@ -182,6 +194,115 @@ export default function GuidePage() {
           </AccordionSummary>
           <AccordionDetails>
             <ToggleSwitchGuideComponent />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          disableGutters={true}
+          expanded={dataAcc[8].open}
+          onChange={accToggle(dataAcc[8].id)}
+          elevation={0}
+        >
+          <AccordionSummary aria-controls="panel1bh-content">
+            <h3 className="tit">모달(dialog)</h3>
+            {dataAcc[8].open ? (
+              <i className="ion ion-ios-arrow-up"></i>
+            ) : (
+              <i className="ion ion-ios-arrow-down"></i>
+            )}
+          </AccordionSummary>
+          <AccordionDetails>
+            <ModalGuideComponent />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          disableGutters={true}
+          expanded={dataAcc[9].open}
+          onChange={accToggle(dataAcc[9].id)}
+          elevation={0}
+        >
+          <AccordionSummary aria-controls="panel1bh-content">
+            <h3 className="tit">Tabs</h3>
+            {dataAcc[9].open ? (
+              <i className="ion ion-ios-arrow-up"></i>
+            ) : (
+              <i className="ion ion-ios-arrow-down"></i>
+            )}
+          </AccordionSummary>
+          <AccordionDetails>
+            <TabsGuideComponent />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          disableGutters={true}
+          expanded={dataAcc[10].open}
+          onChange={accToggle(dataAcc[10].id)}
+          elevation={0}
+        >
+          <AccordionSummary aria-controls="panel1bh-content">
+            <h3 className="tit">툴팁, 뱃지, 스낵바</h3>
+            {dataAcc[10].open ? (
+              <i className="ion ion-ios-arrow-up"></i>
+            ) : (
+              <i className="ion ion-ios-arrow-down"></i>
+            )}
+          </AccordionSummary>
+          <AccordionDetails>
+            <TooltipGuideComponent />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          disableGutters={true}
+          expanded={dataAcc[11].open}
+          onChange={accToggle(dataAcc[11].id)}
+          elevation={0}
+        >
+          <AccordionSummary aria-controls="panel1bh-content">
+            <h3 className="tit">테이블</h3>
+            {dataAcc[11].open ? (
+              <i className="ion ion-ios-arrow-up"></i>
+            ) : (
+              <i className="ion ion-ios-arrow-down"></i>
+            )}
+          </AccordionSummary>
+          <AccordionDetails>
+            <TableGuideComponent />
+            <TableVirtualGuideComponent />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          disableGutters={true}
+          expanded={dataAcc[12].open}
+          onChange={accToggle(dataAcc[12].id)}
+          elevation={0}
+        >
+          <AccordionSummary aria-controls="panel1bh-content">
+            <h3 className="tit">갤러리</h3>
+            {dataAcc[12].open ? (
+              <i className="ion ion-ios-arrow-up"></i>
+            ) : (
+              <i className="ion ion-ios-arrow-down"></i>
+            )}
+          </AccordionSummary>
+          <AccordionDetails>
+            <GallayGuideComponent />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          disableGutters={true}
+          expanded={dataAcc[13].open}
+          onChange={accToggle(dataAcc[13].id)}
+          elevation={0}
+        >
+          <AccordionSummary aria-controls="panel1bh-content">
+            <h3 className="tit">캐러셀(carousel, swiper)</h3>
+            {dataAcc[13].open ? (
+              <i className="ion ion-ios-arrow-up"></i>
+            ) : (
+              <i className="ion ion-ios-arrow-down"></i>
+            )}
+          </AccordionSummary>
+          <AccordionDetails>
+            <CarouselGuideComponent />
           </AccordionDetails>
         </Accordion>
       </div>

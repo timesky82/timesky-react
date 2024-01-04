@@ -99,11 +99,41 @@
 .text_gray-03 {
     color: var(--color-gray-03) !important;
 }
-.row{
+.row {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
 }
+body {
+    overflow-y: scroll;
+}
 
+.justify-center {
+    justify-content: center !important;
+}
 
+// .lazy-load-image
+.lazy-load-image-background.blur {
+    height: auto !important;
+    filter: blur(10px);
+}
+.MuiImageListItem-masonry {
+    width: 100%;
+}
+
+.lazy-load-image-background.blur.lazy-load-image-loaded {
+    filter: blur(0);
+    transition: filter 0.3s;
+    width: 100%;
+}
+
+.lazy-load-image-background.blur > img {
+    opacity: 0;
+}
+
+.lazy-load-image-background.blur.lazy-load-image-loaded > img {
+    opacity: 1;
+    transition: opacity 0.3s;
+    height: auto;
+}
